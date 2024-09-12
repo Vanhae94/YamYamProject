@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-cnt="10">가방구매</button>
+    <button data-cnt="0">신발구매</button>
+
+</body>
+<script>
+    const buttonEls = document.querySelectorAll("button");
+    buttonEls.forEach((v,i) => {
+        console.log(`value 값 : ${v} -  key 값 : ${i}`);
+        console.log(v.dataset);
+        if(i==1) v.dataset.cnt = 50;
+    });
+</script>
+</html>
