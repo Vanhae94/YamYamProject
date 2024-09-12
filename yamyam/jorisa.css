@@ -21,7 +21,7 @@ body {
   color: inherit;
 }
 #title a img{
-  width: 100%;
+  width: 103%;
   height: 200px;
   grid-column-start: 1;
   grid-column-end: 2;

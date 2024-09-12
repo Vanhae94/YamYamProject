@@ -23,7 +23,7 @@ body {
   color: inherit;
 }
 #title a img{
-  width: 100%;
+  width: 103%;
   height: 200px;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -139,6 +139,7 @@ main {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  
 }
 .corsesK img {
   width: 100%;
