@@ -129,41 +129,60 @@ main {
   margin-top: 10px;
   margin-bottom: 30px;
 }
-.corsesbanners a img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.corses img{
+  transition: transform 0.3s ease;
+  
 }
-.corsesK {
+.corses:hover img  {
+  transform: scale(105%); 
+}
+.hovertext {
+  position: relative;
+  bottom: 300px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(253, 95, 37);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 2rem;
+  font-weight: 800;
+  box-sizing: border-box;
+}
+.corses:hover .hovertext {
+  opacity:1;
+}
+.K {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
   
 }
-.corsesK img {
+.K img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.corsesC {
+.C {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
-.corsesC img {
+.C img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.corsesJ {
+.J {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
 }
-.corsesJ img {
+.J img {
   width: 100%;
   height: 100%;
   object-fit: cover;
