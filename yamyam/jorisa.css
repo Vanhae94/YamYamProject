@@ -101,8 +101,9 @@ body {
   margin-left: -20px;
   text-indent: 0%;
 }
+/* 헤더 끝 ====================================================*/
 
-#hansik {
+#korean {
   width: 1280px;
   height: 500px;
 }
@@ -118,7 +119,7 @@ body {
 }
 
 /*쉐프사진*/
-#hansikchef {
+#koreachef {
   margin-left: 50px;
 }
 #curriculum {
