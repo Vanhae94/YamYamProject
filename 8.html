@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>223 위치속성</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .red-box {
+        background-color: red;
+        position: relative;
+      }
+      .green-box {
+        background-color: green;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+      .blue-box {
+        background-color: blue;
+      }
+      #login {
+        position: relative;
+        left: 5px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box red-box"></div>
+    <div class="box green-box">
+      <div id="login">로그인</div>
+    </div>
+    <div class="box blue-box"></div>
+  </body>
+</html>
