@@ -118,24 +118,28 @@ body {
   margin-bottom: 50px;
   overflow: hidden;
 }
-.slides{
+.slides {
   display: flex;
   transition: 0.5s ease;
+  height: 100%;
 }
-.slides img{
+.slide {
+  min-width: 100%;
+}
+.slide img{
   width: 100%;
   height: 100%;
 }
 
   /*공지사항 건의사항 수강생인터뷰*/
-main {
+.bigbanner {
   display: grid;
   gap: 20px;
   justify-content: center;
   grid-template-columns: repeat(3,400px);
-  grid-template-rows: 800px 150px;
+  grid-template-rows: 800px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .corses img{
@@ -196,42 +200,67 @@ main {
   object-fit: cover;
 }
 
-.box {
+.write {
+  display: grid;
+  grid-template-columns: repeat(2,600px);
+  grid-template-rows: 300px;
   margin-top: 20px ;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-main ul span{
-  margin : 2px;
+.write ul span{
+  margin : 20px;
   font-weight: 1000;
+  font-size: 1.8rem;
 }
 .more {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-left: 200px;
+  text-decoration: none;
+}
+.write ul li {
+  margin-top: 7px;
+}
+.write ul li a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 24;
+  color: rgb(226, 158, 31);
 }
 .announcementsbox {
-  position: relative;
+  width: 550px;
   grid-column-start:1;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   text-align: left;
+  font-size: 1.2rem;
+  border: 2px solid rgb(247, 164, 116);
+  padding-bottom: 15px;
 }
 .suggestionsbox {
-  position: relative;
+  width: 550px;
   grid-column-start:2;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   text-align: left;
-}
-.interviewbox {
-  position: relative;
-  grid-column-start:3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  background-image: url("../wpImages/reviews/reviewPPororo.png");
-  background-size: cover;
+  font-size: 1.2rem;
+  border: 2px solid rgb(247, 164, 116);
+  padding-bottom: 15px;
 }
 
 /*푸터 ----------------------------푸터-------------------*/
@@ -314,6 +343,9 @@ main ul span{
   grid-row-end: 4;
   text-align: center;
   margin-top: 0;
+}
+.footerText ul li a {
+  text-decoration: none;
 }
 
   /* 헤더 하위 메뉴 애니메이션 */
