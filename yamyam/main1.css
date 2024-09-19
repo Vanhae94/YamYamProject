@@ -121,7 +121,6 @@ body {
 .slides{
   display: flex;
   transition: 0.5s ease;
-  min-width: 100%;
 }
 .slides img{
   width: 100%;
