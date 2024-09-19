@@ -1,0 +1,133 @@
+body {
+    width: 1280px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 1280px;
+    height: 200px;
+    margin: 10px;
+}
+.box1 {
+    background-image: url("../html/wpImages/headerbanner1.png");
+    background-size: cover;
+}
+
+#title { 
+    text-align: center;
+    width: 1280px;
+}
+.personal {
+    list-style: none;
+    padding: 0;
+    width: 1280px;
+    display: flex;
+    gap: 10px; /* 아이템 사이 간격 */
+    justify-content: right;
+}
+
+.personal li {
+    display: inline;
+}
+.fixmenu {
+    color: black;
+    display: flex;
+    width: 1280px;
+    gap: 60px;
+    padding: 0;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #c0c0c0;
+}
+.header {
+    list-style: none;
+    position: relative;
+}
+.header a {
+    display: block;
+}
+
+.hovermenu {
+    list-style: none;
+}
+/* 하위메뉴 숨기기*/
+.hovermenu {
+    background-color: rgba(253, 214, 85, 0.623);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    display: none; /* 처음엔 숨김 */
+}
+  /* 서브 메뉴 항목 스타일 */
+.hovermenu li a {
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    font-size: 90%;
+    margin-left: -20px;
+    text-indent: 0%;
+}
+
+
+  /* 내용 */
+.content0 {
+    background-color: #f7e9d1;
+    border-radius: 20px;
+    padding: 50px;
+    height: 1200px;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content1 {             /* 찾아오시는 길 */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 5px;
+    color : #ff6f00;
+}
+
+#content2 {    /* 찾아오시는 길 */
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#content2 iframe {  /* 지도 */
+    width: 1200px;
+    height: 600px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#content2 div {   /* 교통 정보 */
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    line-height: 2;
+    font-size: 25px;
+    color: #555;
+    
+}
+
+
+
+
+  /* 하위 메뉴 애니메이션 */
+  .header:hover .hovermenu {
+    display: block; /* 마우스가 올라가면 하위 메뉴 표시 */
+    animation: slideDown 0.3s ease-out; /* 슬라이드 다운 효과 */
+}
+@keyframes slideDown {
+from {
+    opacity: 0;
+    transform: translateY(-10%);
+    }
+to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
