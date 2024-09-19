@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상클래스 선택자</title>
+    <link rel="stylesheet" href="4.css" />
+  </head>
+  <body>
+    <div id="p156">
+      <a href="http://www.naver.com">daum</a>
+      <p>놓아주며 있다</p>
+    </div>
+    <div id="p158">
+      <form action="a.jsp" method="get">
+        <laber for="userid"> 아이디</laber>
+        <input type="text" name="userid" disabled />
+        <laber for="userpw"> 비밀번호</laber>
+        <input type="password" name="userpw" />
+        <laber for="userphone"> 전화번호</laber>
+        <input type="text" name="userphone" />
+        <select name="addr" id="useradd">
+          <optgroup label="서울">
+            <option>강동구</option>
+            <option>강서구</option>
+            <option>강북구</option>
+            <option>강남구</option>
+          </optgroup>
+          <optgroup label="경기">
+            <option>하남시</option>
+            <option>광주시</option>
+            <option>구리시</option>
+            <option>남양주</option>
+          </optgroup>
+        </select>
+        <fieldset>
+          <legend>좋아하는 과일은?</legend>
+          <input type="checkbox" id="banana" name="banana" value="banana" />
+          <label for="banana"> 바나나</label>
+          <input type="checkbox" id="apple" name="apple" value="apple" />
+          <label for="apple"> 사과</label>
+          <input type="checkbox" id="orange" name="orange" value="orange" />
+          <label for="orange"> 오렌지</label>
+        </fieldset>
+        <fieldset>
+          <legend>구매 의향</legend>
+          <input type="radio" id="ok" name="oX" value="ok" />구매하기
+          <input type="radio" id="X" name="oX" value="X" />구매안하기
+        </fieldset>
+      </form>
+    </div>
+    <div>
+      <button>버튼1</button>
+      <button>버튼2</button>
+      <button>버튼3</button>
+      <button>버튼4</button>
+    </div>
+  </body>
+</html>

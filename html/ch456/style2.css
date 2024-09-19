@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 2px;
+}
+#login {
+  width: 304px;
+  height: 390px;
+  position: absolute;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+#login > fieldset {
+  margin: 28px;
+  border: none;
+}
+#login > fieldset > legend {
+  position: absolute;
+  left: -999999px;
+}
+button[type="button"] {
+  width: 228px;
+  height: 44px;
+  border: 1px solid #000;
+  color: #504444;
+  border: ;
+}
+p {
+  font-size: 16px;
+  color: #504444;
+  text-align: center;
+}
+input {
+  background-color: #eaeaea;
+  width: 228px;
+  height: 44px;
+  border: none;
+  margin-bottom: 10px;
+}
+button[type="submit"] {
+  width: 228px;
+  height: 44px;
+  border: 1px solid #000;
+  color: #ffffff;
+  border: ;
+  background-color: #373f3c;
+}
+a {
+  color: #2c3432;
+}

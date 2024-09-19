@@ -1,0 +1,24 @@
+.box {
+  width: 160px;
+  height: 240px;
+  margin: 10px;
+  display: inline-flex;
+}
+.box1 {
+  background-image: url("../images/1.jpg");
+}
+.box2 {
+  background-image: url("../images/2.jpg");
+}
+.box3 {
+  background-image: url("../images/3.jpg");
+}
+.box4 {
+  background-image: url("../images/4.jpg");
+}
+.box5 {
+  background-image: url("../images/5.jpg");
+}
+.box6 {
+  background-image: url("../images/6.jpg");
+}

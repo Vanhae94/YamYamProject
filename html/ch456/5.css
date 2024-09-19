@@ -1,0 +1,33 @@
+h1 {
+  color: red; /*001*/
+}
+h1 {
+  color: pink !important; /*001*/
+}
+.title {
+  color: purple !important; /*010*/
+}
+.title {
+  color: blue;
+}
+#a {
+  color: green;
+}
+#p177 {
+  color: blueviolet;
+}
+html {
+  font-size: 1rem;
+}
+span {
+  font-size: 2rem; /*1rem = 16px */
+  font-family: Georgia, "Times New Roman";
+  line-height: 2;
+}
+div > .v {
+  font-variant: small-caps;
+  text-align: justify;
+}
+a {
+  text-decoration: none;
+}

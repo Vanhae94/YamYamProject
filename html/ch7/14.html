@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-item {
+        color: white;
+        background-color: #ff5252; /* 기본 배경 색상 */
+      }
+      .grid-item:nth-child(2n) {
+        background-color: #bf5e5e;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "sidebar menu menu"
+          "sidebar content content"
+          "footer footer footer";
+      }
+      #h {
+        grid-area: header;
+      }
+      #s {
+        grid-area: sidebar;
+      }
+      #m {
+        grid-area: menu;
+      }
+      #c {
+        grid-area: content;
+      }
+      #f {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <p id="h" class="grid-item">header</p>
+      <p id="s" class="grid-item">sidebar</p>
+      <p id="m" class="grid-item">menu</p>
+      <p id="c" class="grid-item">content</p>
+      <p id="f" class="grid-item">footer</p>
+    </div>
+  </body>
+</html>

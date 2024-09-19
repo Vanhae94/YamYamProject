@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>470</title>
+    <style>
+      .red-color {
+        color: red;
+        font-weight: bold;
+      }
+      .fs20 {
+        font-size: 20px;
+        line-height: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="s()">글자색 변경</button>
+    <button onclick="f()">글자크기 변경</button>
+    <button onclick="c()">글자크기 원래대로</button>
+    <button onclick="t()">변경하기 <-> 원래대로</button>
+    <p id="text">text</p>
+  </body>
+  <script>
+    const s = () => {
+      const t = document.querySelector("#text");
+      t.classList.add("red-color");
+    };
+    const f = () => {
+      const t = document.querySelector("#text");
+      t.classList.add("fs20");
+    };
+    const c = () => {
+      const t = document.querySelector("#text");
+      t.classList.remove("fs20");
+      t.classList.remove("red-color");
+    };
+    const t = () => {
+      const t = document.querySelector("#text");
+      t.classList.toggle("red-color");
+      t.classList.toggle("fs20");
+    };
+    window.onload = () => {
+      setInterval(() => {
+        const t = document.querySelector("#text");
+        t.classList.toggle("red-color");
+        t.classList.toggle("fs20");
+      }, 1500);
+    };
+  </script>
+</html>

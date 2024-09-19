@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사용자 정의 속성 Data-* 이용 dataset</title>
+  </head>
+  <body>
+    <button data-cnt="10" onclick="bag()">가방 구매</button>
+    <button data-cnt="0">신발 구매</button>
+  </body>
+  <script>
+    const buttonEls = document.querySelectorAll("button");
+    let bagCnt = 0;
+    let shoseCnt = 0;
+    buttonEls.forEach((v, i) => {
+      console.log(`value 값 : ${v} - 키값 :  ${i}`);
+      console.log(v.dataset);
+      if (i === 0) bagCnt = v.dataset.cnt;
+      else {
+        v.data.cnt = 5;
+        shoseCnt = v.dataset.cnt;
+      }
+    });
+
+    const bag = () => {
+      const cEl = document.createElement("h1");
+      const divA = document.body.appendChild(cEl);
+      divA.innerText = "신발";
+    };
+  </script>
+</html>
