@@ -121,6 +121,10 @@ body {
 .slides {
   display: flex;
   transition: 0.5s ease;
+  height: 100%;
+}
+.slide {
+  min-width: 100%;
 }
 .slides img {
   width: 100%;
@@ -135,7 +139,7 @@ main {
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: 800px 150px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .corses img {
@@ -201,25 +205,46 @@ main {
 main ul span {
   margin: 2px;
   font-weight: 1000;
+  font-size: 1.8rem;
 }
 .more {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-left: 200px;
+  text-decoration: none;
+}
+.write ul li {
+  margin-top: 7px;
+}
+.write ul li a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 24;
+  color: rgb(226, 158, 31);
 }
 .announcementsbox {
   position: relative;
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   text-align: left;
+  font-size: 1.2rem;
+  border: 2px solid rgb(247, 164, 116);
+  padding-bottom: 15px;
 }
 .suggestionsbox {
   position: relative;
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   text-align: left;
 }
 .interviewbox {
@@ -312,6 +337,9 @@ main ul span {
   grid-row-end: 4;
   text-align: center;
   margin-top: 0;
+}
+.footerText ul li a {
+  text-decoration: none;
 }
 
 /* 헤더 하위 메뉴 애니메이션 */
