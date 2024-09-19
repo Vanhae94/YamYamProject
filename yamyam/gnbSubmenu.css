@@ -1,0 +1,147 @@
+body {
+    width: 1280px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 1280px;
+    height: 200px;
+    margin: 10px;
+}
+.box1 {
+    background-image: url("../html/wpImages/headerbanner1.png");
+    background-size: cover;
+}
+
+#title { 
+    text-align: center;
+    width: 1280px;
+}
+.personal {
+    list-style: none;
+    padding: 0;
+    width: 1280px;
+    display: flex;
+    gap: 10px; /* 아이템 사이 간격 */
+    justify-content: right;
+}
+
+.personal li {
+    display: inline;
+}
+.fixmenu {
+    color: black;
+    display: flex;
+    width: 1280px;
+    gap: 60px;
+    padding: 0;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #c0c0c0;
+}
+.header {
+    list-style: none;
+    position: relative;
+}
+.header a {
+    display: block;
+}
+
+.hovermenu {
+    list-style: none;
+}
+/* 하위메뉴 숨기기*/
+.hovermenu {
+    background-color: rgba(253, 214, 85, 0.623);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    display: none; /* 처음엔 숨김 */
+}
+  /* 서브 메뉴 항목 스타일 */
+.hovermenu li a {
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    font-size: 90%;
+    margin-left: -20px;
+    text-indent: 0%;
+}
+
+  /* 하위 소개글 --- 그리드 */
+.subject{
+    font-size: 48px;
+    color: #ff6f00;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.gridbox{
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-areas: 
+        "subject"
+        "acadamyPhoto"
+        "a"
+        "b"
+    ;
+    grid-template-columns: 1280px ;
+    grid-template-rows:300px 400px 100px 100px 200px;
+    margin-bottom: 500px;
+
+}
+#acadamyPhoto {
+    border: 1px solid gray;
+    justify-content: center;
+    width: 1280px;
+    height: 700px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#a {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-start: 3;
+    font-size: 60px;
+    color: black;
+    text-align: left;
+    margin: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+#b {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-size: 25px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 15px;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+  /* 하위 메뉴 애니메이션 */
+  .header:hover .hovermenu {
+    display: block; /* 마우스가 올라가면 하위 메뉴 표시 */
+    animation: slideDown 0.3s ease-out; /* 슬라이드 다운 효과 */
+}
+@keyframes slideDown {
+from {
+    opacity: 0;
+    transform: translateY(-10%);
+    }
+to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
