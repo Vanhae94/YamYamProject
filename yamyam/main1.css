@@ -9,20 +9,19 @@ body {
 /*-------------------------- 헤더*/
 #title {
   margin-top: 50px;
-  text-shadow: -2px -2px black,
-              -1px 1px black;
-  color: rgb(218, 245, 65);
+  text-shadow: -2px -2px rgb(153, 43, 9), -1px 1px rgb(201, 87, 11);
+  color: rgb(247, 161, 50);
   text-align: center;
   width: 1280px;
 }
-#title a{
+#title a {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 200px;
   text-decoration: none;
   color: inherit;
 }
-#title a img{
+#title a img {
   width: 103%;
   height: 200px;
   grid-column-start: 1;
@@ -31,13 +30,14 @@ body {
   grid-row-end: 2;
 }
 #title h1 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
   align-self: end;
-  margin-bottom: -2px;
+  letter-spacing: 6px;
+  margin-bottom: -30px;
 }
 
 .personal {
@@ -66,7 +66,7 @@ body {
   gap: 60px;
   padding: 0;
   justify-content: center;
-  background: linear-gradient(rgb(247, 135, 8),#ffb546);
+  background: linear-gradient(rgb(247, 135, 8), #ffb546);
   border: 10px solid #ffb546;
   box-shadow: 0 2px 5px 5px #ffb546;
   z-index: 999;
@@ -84,7 +84,7 @@ body {
 .hovermenu {
   list-style: none;
 }
-  /* 하위메뉴 숨기기*/
+/* 하위메뉴 숨기기*/
 .hovermenu {
   background-color: rgba(253, 214, 85, 0.623);
   text-align: left;
@@ -105,7 +105,7 @@ body {
   text-indent: 0%;
 }
 
-  /* 메인 ---------------------------------메인------*/
+/* 메인 ---------------------------------메인------*/
 
 .middlebanner {
   background-color: rgb(255, 255, 255);
@@ -118,32 +118,31 @@ body {
   margin-bottom: 50px;
   overflow: hidden;
 }
-.slides{
+.slides {
   display: flex;
   transition: 0.5s ease;
 }
-.slides img{
+.slides img {
   width: 100%;
   height: 100%;
 }
 
-  /*공지사항 건의사항 수강생인터뷰*/
+/*공지사항 건의사항 수강생인터뷰*/
 main {
   display: grid;
   gap: 20px;
   justify-content: center;
-  grid-template-columns: repeat(3,400px);
+  grid-template-columns: repeat(3, 400px);
   grid-template-rows: 800px 150px;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.corses img{
+.corses img {
   transition: transform 0.3s ease;
-  
 }
-.corses:hover img  {
-  transform: scale(105%); 
+.corses:hover img {
+  transform: scale(105%);
 }
 .hovertext {
   position: relative;
@@ -159,14 +158,13 @@ main {
   box-sizing: border-box;
 }
 .corses:hover .hovertext {
-  opacity:1;
+  opacity: 1;
 }
 .K {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  
 }
 .K img {
   width: 100%;
@@ -197,11 +195,11 @@ main {
 }
 
 .box {
-  margin-top: 20px ;
+  margin-top: 20px;
 }
 
-main ul span{
-  margin : 2px;
+main ul span {
+  margin: 2px;
   font-weight: 1000;
 }
 .more {
@@ -210,7 +208,7 @@ main ul span{
 }
 .announcementsbox {
   position: relative;
-  grid-column-start:1;
+  grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -218,7 +216,7 @@ main ul span{
 }
 .suggestionsbox {
   position: relative;
-  grid-column-start:2;
+  grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -226,7 +224,7 @@ main ul span{
 }
 .interviewbox {
   position: relative;
-  grid-column-start:3;
+  grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -236,9 +234,9 @@ main ul span{
 
 /*푸터 ----------------------------푸터-------------------*/
 
-.bannerLink{
+.bannerLink {
   display: grid;
-  grid-template-columns: repeat(4,250px );
+  grid-template-columns: repeat(4, 250px);
   grid-template-rows: 150px;
   column-gap: 50px;
   justify-content: center;
@@ -249,7 +247,7 @@ main ul span{
   padding: 0;
 }
 
-.footerText ul{
+.footerText ul {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -261,8 +259,8 @@ main ul span{
 
 .footerText2 {
   display: grid;
-  grid-template-columns: repeat(3,380px);
-  grid-template-rows: repeat(2,100px) 50px;
+  grid-template-columns: repeat(3, 380px);
+  grid-template-rows: repeat(2, 100px) 50px;
   justify-content: center;
 }
 
@@ -270,7 +268,7 @@ main ul span{
   font-size: 2.5rem;
   margin-bottom: 3px;
 }
-#yamyam2{
+#yamyam2 {
   font-size: 1.5rem;
   margin-left: 138px;
   margin-top: 0;
@@ -316,7 +314,7 @@ main ul span{
   margin-top: 0;
 }
 
-  /* 헤더 하위 메뉴 애니메이션 */
+/* 헤더 하위 메뉴 애니메이션 */
 .header:hover .hovermenu {
   display: block; /* 마우스가 올라가면 하위 메뉴 표시 */
   animation: slideDown 0.5s ease-out; /* 슬라이드 다운 효과 */
@@ -331,4 +329,3 @@ main ul span{
     transform: translateY(0);
   }
 }
-

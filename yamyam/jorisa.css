@@ -7,20 +7,19 @@ body {
 
 #title {
   margin-top: 50px;
-  text-shadow: -2px -2px black,
-              -1px 1px black;
-  color: rgb(218, 245, 65);
+  text-shadow: -2px -2px rgb(153, 43, 9), -1px 1px rgb(201, 87, 11);
+  color: rgb(247, 161, 50);
   text-align: center;
   width: 1280px;
 }
-#title a{
+#title a {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 200px;
   text-decoration: none;
   color: inherit;
 }
-#title a img{
+#title a img {
   width: 103%;
   height: 200px;
   grid-column-start: 1;
@@ -29,15 +28,15 @@ body {
   grid-row-end: 2;
 }
 #title h1 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
   align-self: end;
-  margin-bottom: -2px;
+  letter-spacing: 6px;
+  margin-bottom: -30px;
 }
-
 .personal {
   position: relative;
   margin-top: 0;
@@ -64,7 +63,7 @@ body {
   gap: 60px;
   padding: 0;
   justify-content: center;
-  background: linear-gradient(rgb(247, 135, 8),#ffb546);
+  background: linear-gradient(rgb(235, 216, 194), #ffb546);
   border: 10px solid #ffb546;
   box-shadow: 0 2px 5px 5px #ffb546;
   z-index: 999;
@@ -81,7 +80,7 @@ body {
 .hovermenu {
   list-style: none;
 }
-  /* 하위메뉴 숨기기*/
+/* 하위메뉴 숨기기*/
 .hovermenu {
   background-color: rgba(253, 214, 85, 0.623);
   text-align: left;
@@ -103,19 +102,23 @@ body {
 }
 /* 헤더 끝 ====================================================*/
 
-#korean {
+.middle {
   width: 1280px;
   height: 500px;
+}
+.title {
+  margin: 50px;
+  font-size: 30px;
 }
 .chefintro {
   display: inline-flex;
 }
 .career {
-  width: 320px;
-  padding-top: 100px;
-  padding-top: 100px;
-  margin-right: 40px;
-  border: 1px solid rgb(219, 188, 188);
+  width: 600px;
+  padding-top: 50px;
+  margin-right: 100px;
+  line-height: 250%;
+  /*border: 1px solid rgb(219, 188, 188);*/
 }
 
 /*쉐프사진*/
@@ -123,17 +126,20 @@ body {
   margin-left: 50px;
 }
 #curriculum {
-  border: 1px solid red;
-
+  /*border: 1px solid red;*/
   margin-bottom: 100px;
   padding: 20px;
   width: 1280px;
   font-size: medium;
 }
-.title {
-  margin: 50px;
-  font-size: 30px;
+/*커리큘럼*/
+#curri {
+  font-size: 24px;
+  font-weight: bold;
+  /*border: 1px solid red;*/
+  margin: 30px;
 }
+
 table {
   table-layout: fixed;
   width: 100%;
