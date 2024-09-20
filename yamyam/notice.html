@@ -13,7 +13,7 @@
       <nav>
         <ul class="fixmenu">
           <li class="header">
-            <a href="#">학원 소개</a>
+            <a href="gnbSubmenu.html">학원 소개</a>
             <ul class="hovermenu">
               <li><a href="gnbSubmenu.html">학원 소개</a></li>
               <li><a href="gnbSubmenu2.html">찾아오시는 길</a></li>
@@ -41,7 +41,7 @@
             </ul>
           </li>
           <li class="header">
-            <a href="#">게 시 판</a>
+            <a href="notice.html">게 시 판</a>
             <ul class="hovermenu">
               <li><a href="notice.html">공지사항</a></li>
               <li><a href="#">건의사항</a></li>
@@ -79,7 +79,29 @@
     <main>
       <h1>|공지사항</h1>
       <div>
-        <h1>게시판</h1>
+        <form>
+          <select name="opt">
+            <option value="subject">제목</option>
+            <option value="number">번호</option>
+            <option value="date">작성일</option>
+          </select>
+          <input type="text" name="제목" />
+          <button onclick="a()">검색</button>
+        </form>
+        <!-- <script>
+          const optionEls = document.querySelectorAll("option");
+          for (let i = 0; i < optionEls.length; i++) {
+            if (optionEls[i].value === "제목") {
+              optionEls[i].selected = true;
+            }
+          }
+          const a =  {
+            for (let i = 0; i < optionEls.length; i++) {
+              if (optionEls[i].value === "제목") {
+                optionEls[i].selected = true;
+              }}
+          };
+        </script> -->
         <table id="table">
           <tr>
             <th bgcolor="#d9e5ff">번호</th>
