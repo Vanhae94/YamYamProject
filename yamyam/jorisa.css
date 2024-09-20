@@ -34,8 +34,22 @@
   font-weight: bold;
   /*border: 1px solid red;*/
   margin: 30px;
+  top: 50%;
+  background-color: #0a0a23;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
 }
-
+#curri:hover {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #f39c2a;
+}
+table img:hover {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #f39c2a;
+}
 table {
   table-layout: fixed;
   width: 100%;

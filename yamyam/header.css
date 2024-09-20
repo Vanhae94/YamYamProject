@@ -69,7 +69,7 @@ body {
 }
 .header {
   list-style: none;
-  /* position: relative;*/
+  position: relative;
 }
 .header a {
   display: block;
@@ -97,4 +97,19 @@ body {
   font-size: 90%;
   margin-left: -20px;
   text-indent: 0%;
+}
+/* 헤더 하위 메뉴 애니메이션 */
+.header:hover .hovermenu {
+  display: block; /* 마우스가 올라가면 하위 메뉴 표시 */
+  animation: slideDown 0.5s ease-out; /* 슬라이드 다운 효과 */
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
