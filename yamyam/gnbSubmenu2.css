@@ -1,120 +1,274 @@
 body {
-  width: 1280px;
-  height: auto;
-  justify-content: center;
-  align-items: center;
+    width: 1280px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
-  width: 1280px;
-  height: 200px;
-  margin: 10px;
+    width: 1280px;
+    height: 200px;
+    margin: 10px;
 }
 .box1 {
-  background-image: url("../wpImages/mainbanners/headBanner.png");
-  background-size: cover;
+    background-image: url("../wpImages/mainbanners/headBanner.png");
+    background-size: cover;
 }
 
-#title {
-  text-align: center;
-  width: 1280px;
+#title { 
+    text-align: center;
+    width: 1280px;
 }
 .personal {
-  list-style: none;
-  padding: 0;
-  width: 1280px;
-  display: flex;
-  gap: 10px; /* 아이템 사이 간격 */
-  justify-content: right;
+    list-style: none;
+    padding: 0;
+    width: 1280px;
+    display: flex;
+    gap: 10px; /* 아이템 사이 간격 */
+    justify-content: right;
 }
 
 .personal li {
-  display: inline;
+    display: inline;
 }
 .fixmenu {
-  color: black;
-  display: flex;
-  width: 1280px;
-  gap: 60px;
-  padding: 0;
-  justify-content: center;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid #c0c0c0;
+    color: black;
+    display: flex;
+    width: 1280px;
+    gap: 60px;
+    padding: 0;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #c0c0c0;
 }
 .header {
-  list-style: none;
-  position: relative;
+    list-style: none;
+    position: relative;
 }
 .header a {
-  display: block;
+    display: block;
 }
 
 .hovermenu {
-  list-style: none;
+    list-style: none;
 }
 /* 하위메뉴 숨기기*/
 .hovermenu {
-  background-color: rgba(253, 214, 85, 0.623);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  list-style: none;
-  display: none; /* 처음엔 숨김 */
+    background-color: rgba(253, 214, 85, 0.623);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    display: none; /* 처음엔 숨김 */
 }
-/* 서브 메뉴 항목 스타일 */
+  /* 서브 메뉴 항목 스타일 */
 .hovermenu li a {
-  width: 100px;
-  display: block;
-  text-decoration: none;
-  font-size: 90%;
-  margin-left: -20px;
-  text-indent: 0%;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    font-size: 90%;
+    margin-left: -20px;
+    text-indent: 0%;
 }
 
-/* 내용 */
 
-#gridbox {
-  /* 찾아오시는 길 */
-  display: grid;
-  grid-template-areas:
-    "iframe subject"
-    "content";
-  grid-template-columns: 640px 640px;
-  grid-template-rows: 50px 400px 400px 150px 150px 150px 150px;
+  /* 내용 */
+
+#gridbox {    /* 찾아오시는 길 */
+    display: grid;
+    grid-template-areas: 
+        "iframe subject"
+        "content"
+    ;
+    grid-template-columns: 640px 640px ;
+    grid-template-rows:50px 400px 400px 150px 150px 150px 150px ;
+
 }
 
-#gridbox iframe {
-  /* 지도 */
-  width: 640px;
-  height: 800px;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+#gridbox iframe {  /* 지도 */
+    width: 640px;
+    height: 760px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-left: 40px;
 }
 
-#content2 div {
-  /* 교통 정보 */
-  font-family: "Arial", sans-serif;
-  text-align: left;
-  line-height: 2;
-  font-size: 25px;
-  color: #555;
+#subject { /* 찾아오시는 길 제목 */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 70px;
+    color: orange;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-left: 40px;
+    letter-spacing: 1px;
+}
+#road { /* 찾아오시는 길 내용 */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 25px;
+    color: rgb(53, 53, 53);
+    text-align: center;
+    font-weight: 400;
+    margin-top: 250px;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    line-height: 70px;
 }
 
-/* 하위 메뉴 애니메이션 */
-.header:hover .hovermenu {
-  display: block; /* 마우스가 올라가면 하위 메뉴 표시 */
-  animation: slideDown 0.3s ease-out; /* 슬라이드 다운 효과 */
+.linkbutton { /* 링크 버튼*/
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 650px;
+    margin-left: 250px;
+    /* 디자인*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 8px;
+    height: 2px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px 90px;
+}
+.linkbutton:hover {
+    opacity: 0.8;
+}
+
+#address { /* 주소*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-content: center;
+    color: orange;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+#addrContent { /* 상세 주소*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#car { /* 자동차*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: center;
+    color: orange;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#carContent { /* 상세 자동차*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: left;
+    color: rgb(53, 53, 53);
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 400px;
+}
+#subway { /* 지하철 */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    text-align: center;
+    color: orange;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#subwayContent { /* 상세 지하철 */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    text-align: left;
+    color: rgb(53, 53, 53);
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 400px;
+}
+#bus { /* 버스 */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    text-align: center;
+    color: orange;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#busContent { /* 상세 버스 */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    text-align: left;
+    color: rgb(53, 53, 53);
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 380px;
+}
+
+
+/* 공통: 하단 로고 */
+#logo{
+    height: 200px;
+    display: block;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+
+
+
+  /* 하위 메뉴 애니메이션 */
+  .header:hover .hovermenu {
+    display: block; /* 마우스가 올라가면 하위 메뉴 표시 */
+    animation: slideDown 0.3s ease-out; /* 슬라이드 다운 효과 */
 }
 @keyframes slideDown {
-  from {
+from {
     opacity: 0;
     transform: translateY(-10%);
-  }
-  to {
+    }
+to {
     opacity: 1;
     transform: translateY(0);
-  }
+    }
 }
