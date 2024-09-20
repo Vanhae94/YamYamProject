@@ -10,85 +10,90 @@
   <body>
     <header>
       <nav>
-          <ul class="fixmenu">
-              <li class="header">
-                  <a href="#">학원 소개</a>
-                  <ul class="hovermenu">
-                      <li><a href="#">학원 소개</a></li>
-                      <li><a href="#">찾아오시는 길</a></li>
-                  </ul>
+        <ul class="fixmenu">
+          <li class="header">
+            <a href="#">학원 소개</a>
+            <ul class="hovermenu">
+              <li><a href="#">학원 소개</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+            </ul>
           </li>
           <li class="header">
-              <a href="korean.html">한식 과정</a>
-              <ul class="hovermenu">
+            <a href="korean.html">한식 과정</a>
+            <ul class="hovermenu">
               <li><a href="#">강사 소개</a></li>
-              <li><a href="#">수업 커리큘럼</a></li>
-              </ul>
+              <li><a href="koreaCurri.html">수업 커리큘럼</a></li>
+            </ul>
           </li>
           <li class="header">
-              <a href="chinese.html">중식 과정</a>
-              <ul class="hovermenu">
+            <a href="chinese.html">중식 과정</a>
+            <ul class="hovermenu">
               <li><a href="#">강사 소개</a></li>
-              <li><a href="#">수업 커리큘럼</a></li>
-              </ul>
+              <li><a href="chinaCurri.html">수업 커리큘럼</a></li>
+            </ul>
           </li>
           <li class="header">
-              <a href="japanese.html">일식 과정</a>
-              <ul class="hovermenu">
+            <a href="japanese.html">일식 과정</a>
+            <ul class="hovermenu">
               <li><a href="#">강사 소개</a></li>
-              <li><a href="#">수업 커리큘럼</a></li>
-              </ul>
+              <li><a href="japanCurri.html">수업 커리큘럼</a></li>
+            </ul>
           </li>
           <li class="header">
-              <a href="#">게 시 판</a>
-              <ul class="hovermenu">
+            <a href="#">게 시 판</a>
+            <ul class="hovermenu">
               <li><a href="#">공지사항</a></li>
               <li><a href="#">건의사항</a></li>
               <li><a href="#">소중한 수강평</a></li>
-              </ul>
+            </ul>
           </li>
           <li class="header">
-              <a href="#">마이페이지</a>
-              <ul class="hovermenu">
+            <a href="#">마이페이지</a>
+            <ul class="hovermenu">
               <li><a href="#">아이디 찾기</a></li>
               <li><a href="#">비밀번호 찾기</a></li>
               <li><a href="#">개인정보 수정</a></li>
               <li><a href="#">회원탈퇴</a></li>
-              </ul>
+            </ul>
           </li>
-          </ul>
+        </ul>
       </nav>
-  
+
       <div id="title">
-          <a href="main1.html">
-          <img src="../wpImages/mainbanners/headBanner.png">
+        <a href="main1.html">
+          <img src="../wpImages/mainbanners/headBanner.png" />
           <h1>당신이 바로 차세대 요리사 No.1 !!</h1>
-          </a>
+        </a>
       </div>
       <nav>
-          <ul class="personal">
+        <ul class="personal">
           <li><a href="#">회원가입</a></li>
           <li>|</li>
           <li><a href="#">로그인</a></li>
           <li>|</li>
           <li><a href="#">ID/비밀번호 찾기</a></li>
-          </ul>
+        </ul>
       </nav>
-      
-  </header>
+    </header>
 
     <main>
       <nav>
-        <img id="hansik" src="../wpImages/teachers/japanese.png" />
+        <img class="middle" src="../wpImages/teachers/japanese.png" />
         <h1 class="title"><strong>|강사 소개</strong></h1>
         <span class="chefintro">
           <dl class="career">
-            <h3><strong>| 강사 경력</strong></h3>
-
-            <dd>2024.00.00 학원 수료</dd>
-            <dd>2024.00.00 오너 쉐프</dd>
-            <dd>2024.00.00 겸임 강사</dd>
-            <dd>2024.00.00 겸임 교수</dd>
+            <h3><strong>< 강사 경력 ></strong></h3>
+            <dd>2024 YAMYAM ACADEMY 겸임 강사</dd>
+            <dd>2022 KBS 연예대상 베스트 아이콘 상 수상</dd>
+            <dd>2022 한국호텔관광학교 호텔스시조리학과 특임교수 취임</dd>
+            <dd>2021 KBS 연예대상 핫이슈 예능인상 수상</dd>
+            <dd>
+              2019 유뷰트 개설 '정호영의 오늘도 요리 Kitchen Caden'<br />(현
+              구독자 44.6만명)
+            </dd>
+            <dd>2014~2018 블루리본 서베이 선정</dd>
+            <dd>2014 이자카야 카덴 창업(오너쉐프)</dd>
+            <dd>2003 츠지 조리사 전문학교 졸업</dd>
           </dl>
           <img
             id="chinesechef"
@@ -96,7 +101,11 @@
           />
         </span>
         <h1 class="title"><strong>|일식 조리 자격증 커리큘럼</strong></h1>
-        <a href="japanCurri.html">커리큘럼 바로가기</a>
+        <p>
+          <a id="curri" href="japanCurri.html" target="_blank"
+            >커리큘럼 바로가기</a
+          >
+        </p>
         <div id="curriculum">
           <table>
             <tr>
@@ -190,11 +199,12 @@
                 /><br />김초밥, 생선초밥
               </th>
               <th>
-                <img
-                  src="../wpImages/food/japanese/tunachobab.png"
-                  width="200"
-                  height="200"
-                /><br />참치김초밥
+                <a href="../wpImages/recipe/chamchikimbab.png">
+                  <img
+                    src="../wpImages/food/japanese/tunachobab.png"
+                    width="200"
+                    height="200" /></a
+                ><br />참치김초밥
               </th>
               <th>
                 <img
