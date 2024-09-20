@@ -9,19 +9,20 @@ body {
 /*-------------------------- 헤더*/
 #title {
   margin-top: 50px;
-  text-shadow: -2px -2px rgb(153, 43, 9), -1px 1px rgb(201, 87, 11);
-  color: rgb(247, 161, 50);
+  text-shadow: -2px -2px black,
+              -1px 1px black;
+  color: rgb(218, 245, 65);
   text-align: center;
   width: 1280px;
 }
-#title a {
+#title a{
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 200px;
   text-decoration: none;
   color: inherit;
 }
-#title a img {
+#title a img{
   width: 103%;
   height: 200px;
   grid-column-start: 1;
@@ -30,14 +31,13 @@ body {
   grid-row-end: 2;
 }
 #title h1 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
   align-self: end;
-  letter-spacing: 6px;
-  margin-bottom: -30px;
+  margin-bottom: -2px;
 }
 
 .personal {
@@ -66,7 +66,7 @@ body {
   gap: 60px;
   padding: 0;
   justify-content: center;
-  background: linear-gradient(rgb(247, 135, 8), #ffb546);
+  background: linear-gradient(rgb(247, 135, 8),#ffb546);
   border: 10px solid #ffb546;
   box-shadow: 0 2px 5px 5px #ffb546;
   z-index: 999;
@@ -84,7 +84,7 @@ body {
 .hovermenu {
   list-style: none;
 }
-/* 하위메뉴 숨기기*/
+  /* 하위메뉴 숨기기*/
 .hovermenu {
   background-color: rgba(253, 214, 85, 0.623);
   text-align: left;
@@ -105,7 +105,7 @@ body {
   text-indent: 0%;
 }
 
-/* 메인 ---------------------------------메인------*/
+  /* 메인 ---------------------------------메인------*/
 
 .middlebanner {
   background-color: rgb(255, 255, 255);
@@ -126,27 +126,28 @@ body {
 .slide {
   min-width: 100%;
 }
-.slides img {
+.slide img{
   width: 100%;
   height: 100%;
 }
 
-/*공지사항 건의사항 수강생인터뷰*/
-main {
+  /*공지사항 건의사항 수강생인터뷰*/
+.bigbanner {
   display: grid;
   gap: 20px;
   justify-content: center;
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: 800px 150px;
+  grid-template-columns: repeat(3,400px);
+  grid-template-rows: 800px;
   margin-top: 10px;
   margin-bottom: 50px;
 }
 
-.corses img {
+.corses img{
   transition: transform 0.3s ease;
+  
 }
-.corses:hover img {
-  transform: scale(105%);
+.corses:hover img  {
+  transform: scale(105%); 
 }
 .hovertext {
   position: relative;
@@ -162,13 +163,14 @@ main {
   box-sizing: border-box;
 }
 .corses:hover .hovertext {
-  opacity: 1;
+  opacity:1;
 }
 .K {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  
 }
 .K img {
   width: 100%;
@@ -198,12 +200,18 @@ main {
   object-fit: cover;
 }
 
-.box {
-  margin-top: 20px;
+.write {
+  display: grid;
+  grid-template-columns: repeat(2,600px);
+  grid-template-rows: 300px;
+  margin-top: 20px ;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-main ul span {
-  margin: 2px;
+.write ul span{
+  margin : 20px;
   font-weight: 1000;
   font-size: 1.8rem;
 }
@@ -225,12 +233,16 @@ main ul span {
 }
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 24;
   color: rgb(226, 158, 31);
 }
 .announcementsbox {
-  position: relative;
-  grid-column-start: 1;
+  width: 550px;
+  grid-column-start:1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -240,28 +252,22 @@ main ul span {
   padding-bottom: 15px;
 }
 .suggestionsbox {
-  position: relative;
-  grid-column-start: 2;
+  width: 550px;
+  grid-column-start:2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
   text-align: left;
-}
-.interviewbox {
-  position: relative;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  background-image: url("../wpImages/reviews/reviewPPororo.png");
-  background-size: cover;
+  font-size: 1.2rem;
+  border: 2px solid rgb(247, 164, 116);
+  padding-bottom: 15px;
 }
 
 /*푸터 ----------------------------푸터-------------------*/
 
-.bannerLink {
+.bannerLink{
   display: grid;
-  grid-template-columns: repeat(4, 250px);
+  grid-template-columns: repeat(4,250px );
   grid-template-rows: 150px;
   column-gap: 50px;
   justify-content: center;
@@ -272,7 +278,7 @@ main ul span {
   padding: 0;
 }
 
-.footerText ul {
+.footerText ul{
   list-style: none;
   display: flex;
   gap: 20px;
@@ -284,8 +290,8 @@ main ul span {
 
 .footerText2 {
   display: grid;
-  grid-template-columns: repeat(3, 380px);
-  grid-template-rows: repeat(2, 100px) 50px;
+  grid-template-columns: repeat(3,380px);
+  grid-template-rows: repeat(2,100px) 50px;
   justify-content: center;
 }
 
@@ -293,7 +299,7 @@ main ul span {
   font-size: 2.5rem;
   margin-bottom: 3px;
 }
-#yamyam2 {
+#yamyam2{
   font-size: 1.5rem;
   margin-left: 138px;
   margin-top: 0;
@@ -342,7 +348,7 @@ main ul span {
   text-decoration: none;
 }
 
-/* 헤더 하위 메뉴 애니메이션 */
+  /* 헤더 하위 메뉴 애니메이션 */
 .header:hover .hovermenu {
   display: block; /* 마우스가 올라가면 하위 메뉴 표시 */
   animation: slideDown 0.5s ease-out; /* 슬라이드 다운 효과 */
@@ -357,3 +363,4 @@ main ul span {
     transform: translateY(0);
   }
 }
+
