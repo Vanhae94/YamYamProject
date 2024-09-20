@@ -100,9 +100,9 @@ body {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    font-size: 50px;
+    font-size: 60px;
     color: orange;
-    text-align: left;
+    text-align: center;
     font-weight: 700;
     margin-top: 50px;
     margin-left: 40px;
@@ -115,9 +115,9 @@ body {
     grid-row-end: 3;
     font-size: 25px;
     color: rgb(53, 53, 53);
-    text-align: left;
+    text-align: center;
     font-weight: 400;
-    margin-top: 150px;
+    margin-top: 180px;
     margin-left: 40px;
     letter-spacing: 1px;
 }
@@ -139,6 +139,76 @@ body {
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#car { /* 자동차*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: center;
+    color: orange;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#carContent { /* 상세 자동차*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#subway { /* 지하철 */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    text-align: center;
+    color: orange;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#subwayContent { /* 상세 지하철 */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#bus { /* 버스 */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    text-align: center;
+    color: orange;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#busContent { /* 상세 버스 */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
     text-align: center;
     color: rgb(53, 53, 53);
     font-weight: 400;
