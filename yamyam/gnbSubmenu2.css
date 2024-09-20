@@ -11,7 +11,7 @@ body {
     margin: 10px;
 }
 .box1 {
-    background-image: url("../html/wpImages/headerbanner1.png");
+    background-image: url("../wpImages/mainbanners/headBanner.png");
     background-size: cover;
 }
 
@@ -73,46 +73,90 @@ body {
 
 
   /* 내용 */
-.content0 {
-    background-color: #f7e9d1;
-    border-radius: 20px;
-    padding: 50px;
-    height: 1200px;
-    width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.content1 {             /* 찾아오시는 길 */
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    font-size: 48px;
-    font-weight: 5px;
-    color : #ff6f00;
-}
-
-#content2 {    /* 찾아오시는 길 */
+#gridbox {    /* 찾아오시는 길 */
     display: grid;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 20px;
+    grid-template-areas: 
+        "iframe subject"
+        "content"
+    ;
+    grid-template-columns: 640px 640px ;
+    grid-template-rows:50px 400px 400px 150px 150px 150px 150px ;
+
 }
 
-#content2 iframe {  /* 지도 */
-    width: 1200px;
-    height: 600px;
+#gridbox iframe {  /* 지도 */
+    width: 640px;
+    height: 800px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-#content2 div {   /* 교통 정보 */
-    font-family: 'Arial', sans-serif;
+#subject { /* 찾아오시는 길 제목 */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 50px;
+    color: orange;
     text-align: left;
-    line-height: 2;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-left: 40px;
+    letter-spacing: 1px;
+}
+#road { /* 찾아오시는 길 내용 */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     font-size: 25px;
-    color: #555;
-    
+    color: rgb(53, 53, 53);
+    text-align: left;
+    font-weight: 400;
+    margin-top: 150px;
+    margin-left: 40px;
+    letter-spacing: 1px;
 }
 
+#address { /* 주소*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    color: orange;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+#addrContent { /* 상세 주소*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+/* 공통: 하단 로고 */
+#logo{
+    height: 200px;
+    display: block;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
 
 
 
