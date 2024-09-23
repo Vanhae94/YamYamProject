@@ -12,7 +12,7 @@ body {
   text-shadow: -2px -2px rgb(153, 43, 9), -1px 1px rgb(201, 87, 11);
   color: rgb(247, 161, 50);
   text-align: center;
-  width: 1280px;
+  width: 1300px;
 }
 #title a {
   display: grid;
@@ -42,7 +42,7 @@ body {
 
 .personal {
   position: relative;
-  margin-top: 0;
+  margin-top: -20px;
   margin-bottom: 30px;
   list-style: none;
   padding: 0;
@@ -54,22 +54,23 @@ body {
 .personal li {
   display: inline;
 }
-.fixmenu {
-  top: -16px;
+.fixmenu {    /* 메뉴 */
   color: black;
   display: flex;
-  width: 1300px;
-  gap: 60px;
+  width: 1280px;
+  height: 30px;
+  gap: 120px;
   padding: 0;
+  margin-top: 50px;
   justify-content: center;
-  background: linear-gradient(rgb(247, 135, 8), #ffb546);
-  border: 10px solid #ffb546;
-  box-shadow: 0 2px 5px 5px #ffb546;
+  background: #fff4e3;
+  border-radius: 20px ;
+  text-shadow: 0 2px 5px 12px #000000;
   z-index: 999;
 }
 .header {
   list-style: none;
-  position: relative;
+  /* position: relative;*/
 }
 .header a {
   display: block;
@@ -82,11 +83,13 @@ body {
 .hovermenu {
   background-color: rgba(253, 214, 85, 0.623);
   text-align: left;
-  position: absolute;
+  position: relative;
   top: 100%;
   list-style: none;
-  display: none; /* 처음엔 숨김 */
+  display: none;
+  /*display: none; /* 처음엔 숨김 */
 }
+
 /* 서브 메뉴 항목 스타일 */
 .hovermenu li a {
   margin-top: 3px;
@@ -98,7 +101,7 @@ body {
   margin-left: -20px;
   text-indent: 0%;
 }
-/* 헤더 하위 메뉴 애니메이션 */
+
 .header:hover .hovermenu {
   display: block; /* 마우스가 올라가면 하위 메뉴 표시 */
   animation: slideDown 0.5s ease-out; /* 슬라이드 다운 효과 */
