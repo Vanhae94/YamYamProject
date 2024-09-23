@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   width: 1280px;
   justify-content: center;
@@ -116,3 +117,123 @@ body {
     transform: translateY(0);
   }
 }
+=======
+body {
+  width: 1280px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  height: 0% auto;
+}
+/*---------------헤더----------------*/
+#title {
+  margin-top: 50px;
+  text-shadow: -2px -2px rgb(153, 43, 9), -1px 1px rgb(201, 87, 11);
+  color: rgb(247, 161, 50);
+  text-align: center;
+  width: 1300px;
+}
+#title a {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 200px;
+  text-decoration: none;
+  color: inherit;
+}
+#title a img {
+  width: 100%;
+  height: 200px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#title h1 {
+  font-size: 2rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: end;
+  letter-spacing: 6px;
+  margin-bottom: -30px;
+}
+
+.personal {
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  list-style: none;
+  padding: 0;
+  width: 1280px;
+  display: flex;
+  gap: 10px; /* 아이템 사이 간격 */
+  justify-content: right;
+}
+.personal li {
+  display: inline;
+}
+.fixmenu {    /* 메뉴 */
+  color: black;
+  display: flex;
+  width: 1280px;
+  height: 30px;
+  gap: 120px;
+  padding: 0;
+  margin-top: 50px;
+  justify-content: center;
+  background: #fff4e3;
+  border-radius: 20px ;
+  text-shadow: 0 2px 5px 12px #000000;
+  z-index: 999;
+}
+.header {
+  list-style: none;
+  /* position: relative;*/
+}
+.header a {
+  display: block;
+}
+
+.hovermenu {
+  list-style: none;
+}
+/* 하위메뉴 숨기기*/
+.hovermenu {
+  background-color: rgba(253, 214, 85, 0.623);
+  text-align: left;
+  position: relative;
+  top: 100%;
+  list-style: none;
+  display: none;
+  /*display: none; /* 처음엔 숨김 */
+}
+
+/* 서브 메뉴 항목 스타일 */
+.hovermenu li a {
+  margin-top: 3px;
+  margin-bottom: 5px;
+  width: 100px;
+  display: block;
+  text-decoration: none;
+  font-size: 90%;
+  margin-left: -20px;
+  text-indent: 0%;
+}
+
+.header:hover .hovermenu {
+  display: block; /* 마우스가 올라가면 하위 메뉴 표시 */
+  animation: slideDown 0.5s ease-out; /* 슬라이드 다운 효과 */
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+>>>>>>> 061cadafd8e14130f7c6e794b028f62dbf6e9674
