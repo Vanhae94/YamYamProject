@@ -1,0 +1,178 @@
+
+  
+body {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; 
+}
+
+
+* {
+    box-sizing: border-box;
+
+}
+#user {
+  width: 800px;
+  height: 800px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #000;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+#user > fieldset {
+  margin: 0; 
+  border: none;
+}
+
+#user > fieldset > legend {
+  position: absolute;
+  left: -999999px; 
+}
+
+label {
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  margin-bottom: 20px;
+}
+
+
+label h1 {
+  font-size: 14px;
+  margin: 0; 
+  margin-right: 20px; 
+}
+
+
+input {
+  background-color: #eaeaea;
+  width: 320px; 
+  height: 50px; 
+  border: 1px solid black;
+  margin-bottom: 0px;
+}
+
+button[type="submit"] {
+  width: 149px; 
+  height: 50px; 
+  border: 1px solid #000;
+  color: #ffffff;
+  background-color: rgb(231, 180, 86);
+  margin-top: -20px; 
+}
+
+.button-container {
+  display: flex;
+  gap: 20px; 
+  margin-bottom: 10px; 
+  margin-left: 15px; 
+}
+
+
+.email-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.passwordHint-container {
+  display: flex; /* Flexbox 활성화 */
+  align-items: center; /* 수직 중앙 정렬 */
+  gap: 0px; /* 요소 간의 간격 조정 */
+}
+
+.passwordHint-input {
+  width: 160px; /* 입력란 너비를 절반으로 조정 */
+
+  
+}
+.passwordHint-select {
+  height: 50px; /* 같은 높이로 설정 */
+  padding: 8px; /* 원하는 패딩 설정 */
+  width: 140px; /* 입력란 너비를 절반으로 조정 */
+  margin-right: 20px; /* 오른쪽 여백 추가 */
+}
+
+.birthday-container {
+  display: flex; /* Flexbox 활성화 */
+  align-items: center; /* 수직 중앙 정렬 */
+  gap: 0px; /* 요소 간의 간격 조정 */
+}
+
+.birthday-input {
+  width: 320px; /* 입력란 너비 조정 (필요 시) */
+}
+.email-input
+{
+  width: 146px; /* 너비 조정 */
+  height: 50px;
+  border: 1px solid black;
+}
+.domain-input {
+  width: 146px; /* 너비 조정 */
+  height: 50px;
+  border: 1px solid black;
+  margin-right: 10px; /* 오른쪽 여백 추가 */
+}
+
+.domain-select {
+  height: 50px; /* 같은 높이로 설정 */
+  padding: 8px; /* 원하는 패딩 설정 */
+}
+
+.email-container h1 {
+  margin: 0; /* 기본 마진 제거 */
+  padding: 0; /* 패딩 제거 */
+  line-height: normal; /* 줄 높이 조정 */
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 15px; /* 체크박스 너비 */
+  height: 15px; /* 체크박스 높이 */
+  appearance: none; /* 기본 스타일 제거 */
+  background-color: #fff; /* 배경 색상 */
+  border: 1px solid #000; /* 테두리 설정 */
+  border-radius: 2px; /* 모서리 둥글게 */
+  cursor: pointer; /* 커서 모양 변경 */
+  margin-right: 13px; 
+}
+
+/* 체크박스를 체크했을 때의 스타일 */
+.checkbox-container input[type="checkbox"]:checked {
+  background-color: #000; /* 체크된 상태의 배경 색상 */
+  border: none; /* 체크된 상태에서 테두리 제거 */
+  position: relative;
+}
+
+.checkbox-container input[type="checkbox"]:checked::after {
+  content: ''; /* 체크 표시 추가 */
+  position: absolute;
+  left: 3px; /* 체크 표시 위치 조정 */
+  top: 7px; /* 체크 표시 위치 조정 */
+  width: 4px; /* 체크 표시 너비 */
+  height: 8px; /* 체크 표시 높이 */
+  border: solid white; /* 체크 표시 색상 */
+  border-width: 0 1px 1px 0; /* 체크 표시 형태 */
+  transform: rotate(45deg); /* 체크 표시 회전 */
+  
+}

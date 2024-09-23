@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>비밀번호 찾기</title>
+    <title>회원가입</title>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="main1.css" />
-    <link rel="stylesheet" href="mypage4.css" />
+    <link rel="stylesheet" href="mypage5.css" />
   </head>
   <body>
     <header>
@@ -67,67 +67,114 @@
           </a>
       </div>
       <nav>
-        <ul class="personal">
-        <li><a href="mypage5">회원가입</a></li>
-        <li>|</li>
-        <li><a href="mypage.html">로그인</a></li>
-        <li>|</li>
-        <li><a href="mypage3">ID/비밀번호 찾기</a></li>
-        </ul>
-    </nav>
+          <ul class="personal">
+          <li><a href="mypage5">회원가입</a></li>
+          <li>|</li>
+          <li><a href="mypage.html">로그인</a></li>
+          <li>|</li>
+          <li><a href="mypage3">ID/비밀번호 찾기</a></li>
+          </ul>
+      </nav>
     </header>
 
+</head>
 <main>
-
     <body>
-      <h1>Yam Yam Academy 비밀번호 찾기</h1>
-        <form action="#" id="user">
-          <fieldset>
-            <label for="userID">              
-              <h1> 아이디 </h1>
-              <style>
-                 label[for="useremail"] h1 {
-                   font-size: 14px;}
-               </style>
-              <input
-                type="text"
-                id="userID"
-                name="userID"
-                placeholder="아이디"
-              />
-            </label>
-            <label for="username">              
-              <h1> 이&nbsp;&nbsp;&nbsp;&nbsp;름 </h1>
-              <style>
-                 label[for="useremail"] h1 {
-                   font-size: 14px;}
-               </style>
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="이름"
-              />
-            </label>
-            <label for="email">              
-              <h1> 이메일 </h1>
-              <style>
-                 label[for="useremail"] h1 {
-                   font-size: 14px;}
-               </style>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="이메일"
-              />
-            </label>
-            <div class="button-container">
-            <button type="submit">비밀번호 찾기</button>
-            <button type="submit">뒤로가기</button>
+
+      <form action="#" id="user">
+        <fieldset>
+          <h1>Yam Yam Academy 회원가입</h1>
+          <legend>개인정보 변경</legend>
+          
+          <label for="userID">
+            <h1> 아&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</h1>
+            <input type="text" id="userID" name="userID" placeholder="아이디" />
+          </label>
+          
+          <label for="username">
+            <h1> 이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 </h1>
+            <input type="text" id="username" name="username" placeholder="이름" />
+          </label>
+          
+          <label for="password">
+            <h1> 비&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;밀&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;번&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;호</h1>
+            <input type="password" id="password" name="password" placeholder="비밀번호" />
+          </label>
+          
+          <label for="passwordConfirm">
+            <h1> 비&nbsp;&nbsp;밀&nbsp;&nbsp;번&nbsp;&nbsp;호&nbsp;확&nbsp;&nbsp;인</h1>
+            <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="비밀번호 확인" />
+          </label>
+
+          <label for="passwordHint">
+            <div class="passwordHint-container">
+              <h1> 비밀번호 찾기힌트 </h1>
+              <select name="passwordHint" id="passwordselect" onchange="HintCheck();" class="passwordHint-select">
+                <option value="0" selected="selected">비밀번호 힌트</option>
+                <option value="내가 태어난 곳">내가 태어난 곳</option>
+                <option value="기억에 남는 장소">기억에 남는 장소</option>
+                <option value="나의 고향은?">나의 고향은?</option>
+                <option value="내가 나온 학교">내가 나온 학교</option>
+              </select>
+              <input type="text" id="passwordHint" name="passwordHint" class="passwordHint-input" />
             </div>
-          </fieldset>
-        </form>
+          </label>
+
+          <label for="useremail">
+            <h1> 이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;메&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일 </h1>
+            <div class="email-container">
+              <input
+                type="text"
+                id="useremail"
+                name="useremail"
+                placeholder="이메일"
+                class="email-input"
+              />
+              <h1>&nbsp;&nbsp;@&nbsp;&nbsp;</h1>
+              <input
+                type="text"
+                id="useremailDomain"
+                name="useremailDomain"
+                placeholder="도메인"
+                class="domain-input"
+              />
+
+            <select name="domain" id="domainSelect" onchange="domainCheck();" class="domain-select">
+              <option value="0" selected="selected">직접입력</option>
+              <option value="naver.com">naver.com</option>
+              <option value="hanmail.net">hanmail.net</option>
+              <option value="nate.com">nate.com</option>
+              <option value="yahoo.com">yahoo.com</option>
+            </select>
+            </div>
+          </label>
+        </fieldset>
+        <div class="checkbox-container">
+          <label>
+            <input type="checkbox" name="check" value="check1">정보 메일을 수신합니다.
+          </label>
+          <label>
+            <input type="checkbox" name="check" value="check2">핸드폰 문자메세지를 수신합니다.
+          </label>
+        </div>
+        <div class="button-container">
+          <button type="submit">회원가입</button>
+          <button type="submit">뒤로가기</button>
+        </div>
+
+      </form>
+
+      <script>
+        function domainCheck() {
+          const selectElement = document.getElementById("domainSelect");
+          const inputElement = document.getElementById("useremailDomain");
+          
+          // 선택된 옵션의 값을 도메인 입력란에 설정
+          inputElement.value = selectElement.value !== "0" ? selectElement.value : '';
+        }
+      
+      </script>
+      
       </body>
 
 </main>
@@ -179,4 +226,6 @@
   </div>
 </footer>
 </body>
+
+
 </html>
