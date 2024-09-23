@@ -4,9 +4,9 @@
   height: 300px;
   margin: 10px;
   background-position: center;
-  border: 2px solid #c0c0c0;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  box-shadow: 2px 2px 0px 0px #555555;
+  margin-top: 80px;
+  margin-bottom: 0px;
   overflow: hidden;
 }
 .slides {
@@ -22,7 +22,7 @@
   height: 100%;
 }
 
-/*공지사항 건의사항 수강생인터뷰*/
+/*공지사항 건의사항*/
 .bigbanner {
   display: grid;
   gap: 20px;
@@ -44,8 +44,9 @@
   bottom: 300px;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: rgb(253, 95, 37);
+  background-color: rgba(255, 255, 255, 0.836);
+  border-radius: 10px ;
+  color: rgb(0, 0, 0);
   opacity: 0;
   transition: opacity 0.3s ease;
   font-size: 2rem;
