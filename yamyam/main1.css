@@ -1,12 +1,31 @@
+.middlebannerTop {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1280px;
+  grid-template-rows: 250px;
+  background-position: center;
+  box-shadow: 7px 7px 7px 0px blur #000000;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+#mbTopPhoto{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 1280px;
+  height: 300px;
+}
+
 .middlebanner {
   background-color: rgb(255, 255, 255);
   width: 1280px;
   height: 300px;
   margin: 10px;
   background-position: center;
-  box-shadow: 2px 2px 0px 0px #555555;
-  margin-top: 80px;
-  margin-bottom: 0px;
+  box-shadow: 7px 7px 7px 0px blur #000000;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 .slides {
@@ -22,14 +41,26 @@
   height: 100%;
 }
 
-/*공지사항 건의사항*/
+
+.bigbg{
+  justify-content: center;
+  background-color: #fff4e3;
+  margin-bottom: 20px;
+  height: 1050px;
+  border-radius: 30px ;
+}
+
+h1{
+  font-size: 40px;
+}
+
 .bigbanner {
   display: grid;
   gap: 20px;
   justify-content: center;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: 800px;
-  margin-top: 10px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -90,14 +121,16 @@
   object-fit: cover;
 }
 
+/*공지사항 건의사항*/
+
 .write {
   display: grid;
-  grid-template-columns: repeat(2, 600px);
-  grid-template-rows: 300px;
-  margin-top: 20px;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: 300px 100px;
+  margin-top: 150px;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .write ul span {
@@ -127,7 +160,7 @@
   color: rgb(226, 158, 31);
 }
 .announcementsbox {
-  width: 550px;
+  width: 380px;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -138,9 +171,9 @@
   padding-bottom: 15px;
 }
 .suggestionsbox {
-  width: 550px;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  width: 380px;
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
   text-align: left;
@@ -148,6 +181,15 @@
   border: 2px solid rgb(247, 164, 116);
   padding-bottom: 15px;
 }
+.cscBox{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+
+
 
 /*푸터 ----------------------------푸터-------------------*/
 
@@ -155,11 +197,11 @@
   display: grid;
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: 150px;
-  column-gap: 50px;
+  column-gap: 30px;
   justify-content: center;
   margin-left: -20px;
   margin-right: -20px;
-  margin-top: 80px;
+  margin-top: 500px;
   margin-bottom: 30px;
   padding: 0;
 }

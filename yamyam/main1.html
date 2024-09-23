@@ -10,13 +10,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap");
+    </style>
   </head>
   <body>
     <header>
       <div id="title">
         <a href="main1.html">
           <img src="../wpImages/mainbanners/headBanner.png" />
-          <h1>  </h1>
+          <h1></h1>
         </a>
       </div>
       <nav>
@@ -31,7 +34,10 @@
       <nav>
         <ul class="fixmenu">
           <li class="header">
-            <a href="#">학원 소개</a>
+            <a><img src="../wpImages/logo.png" id="menulogo1" /></a>
+          </li>
+          <li class="header">
+            <a href="gnbSubmenu.html">학원 소개</a>
             <ul class="hovermenu">
               <li><a href="gnbSubmenu.html">학원 소개</a></li>
               <li><a href="gnbSubmenu2.html">찾아오시는 길</a></li>
@@ -75,28 +81,34 @@
               <li><a href="#">회원탈퇴</a></li>
             </ul>
           </li>
+          <li class="header">
+            <a><img src="../wpImages/logo.png" id="menulogo2" /></a>
+          </li>
         </ul>
       </nav>
     </header>
-
+    <a class="middlebannerTop">
+      <img src="../wpImages/mainbanners/middleBanner.png" id="mbTopPhoto" />
+    </a>
     <div class="middlebanner">
       <div class="slides">
-        <a class="slide" href="gnbSubmenu.html">
-          <img src="../wpImages/mainbanners/middlebanner.jpg" alt="slide 1" />
+        <a class="slide" href="소중한 수강평">
+          <img src="../wpImages/reviews/review1.png" alt="slide 2" />
         </a>
         <a class="slide" href="소중한 수강평">
-          <img src="../wpImages/reviews/reviewPPororo.png" alt="slide 2" />
+          <img src="../wpImages/reviews/review2.png" alt="slide 3" />
         </a>
         <a class="slide" href="소중한 수강평">
-          <img src="../wpImages/reviews/reviewHachewping.png" alt="slide 3" />
-        </a>
-        <a class="slide" href="소중한 수강평">
-          <img src="../wpImages/reviews/reviewPPuka.png" alt="slide 4" />
+          <img src="../wpImages/reviews/review3.png" alt="slide 4" />
         </a>
       </div>
     </div>
 
-    <main>
+    <main class="bigbg">
+      <h1>
+        <br />
+        |&nbsp;&nbsp;&nbsp;커리큘럼&nbsp;&nbsp;&nbsp;|
+      </h1>
       <div class="bigbanner">
         <a class="corses K" href="korean.html">
           <img src="../wpImages/mainbanners/koreanCorse.jpg" /><span
@@ -122,34 +134,39 @@
         <ul class="announcementsbox">
           <span class="material-symbols-outlined"> campaign </span>
           <span>공지사항</span>
-          <a class="more" href="#공지사항 페이지">더보기⇒</a>
-          <li>
-            <a href="#"
-              >공지할것을 공지합니다 이건
-              첫번째공지사항이다ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</a
-            >
-          </li>
-          <li><a href="#">공지사항2</a></li>
-          <li><a href="#">공지사항3</a></li>
-          <li><a href="#">공지사항4</a></li>
-          <li><a href="#">공지사항5</a></li>
+          <a class="more" href="#공지사항 페이지">>&nbsp;더보기</a>
+          <li><a href="#">2024학년도 하반기 시험 일정</a></li>
+          <li><a href="#">수강생 위생 교육 진행 일정</a></li>
+          <li><a href="#">한식 조리사 자격증 일정 안내</a></li>
+          <li><a href="#">'<'중식 조리사 과정'>' 강의실 안내</a></li>
+          <li><a href="#">일식 조리사 자격증 일정 안내</a></li>
         </ul>
 
         <ul class="suggestionsbox">
           <span class="material-symbols-outlined"> campaign </span>
           <span>건의사항</span>
-          <a class="more" href="#건의사항 페이지">더보기⇒</a>
+          <a class="more" href="#건의사항 페이지">>&nbsp;더보기</a>
+          <li><a href="#">건의사항 게시판 에티켓을 지켜주세요.</a></li>
+          <li><a href="#">온라인 수업 자료는 제공해주실 수 없나요?</a></li>
+          <li>
+            <a href="#">졸업생 분들과 만나는 자리가 있었으면 좋겠어요.</a>
+          </li>
+          <li>
+            <a href="#">조리사 자격증 시험에 대비하여 특강이 따로 있나요?</a>
+          </li>
           <li>
             <a href="#"
-              >우리 조원들 다들 열심히해줘서 너무 이쁘다 고맙습니다
-              화이팅이에요</a
+              >외부 요리 전문가들도 초청하여 특별 특강을 하면 좋겠어요.</a
             >
           </li>
-          <li><a href="#">건의사항2</a></li>
-          <li><a href="#">건의사항3</a></li>
-          <li><a href="#">건의사항4</a></li>
-          <li><a href="#">건의사항5</a></li>
         </ul>
+
+        <a class="cscBox">
+          <img
+            src="../wpImages/cscBanner.png"
+            style="width: 420px; height: 275px"
+          />
+        </a>
       </div>
     </main>
     <footer>
@@ -157,21 +174,21 @@
         <a href="https://www.naver.com/" target="_blank"
           ><img
             src="https://play-lh.googleusercontent.com/YW_Rd7EUbZZ6gyEblSbXHGSPOy54FzBgtFmWgCSYioTskmhP5n1-L-Ay7fCdE0RUvzI=w240-h480-rw"
-            style="width: 150px; height: 100px"
+            style="width: 120px; height: 100px"
         /></a>
         <a href="https://www.google.com/" target="_blank"
           ><img
             src="https://previews.123rf.com/images/kornienko/kornienko1611/kornienko161100200/66047248-%ED%82%A4%EC%8B%9C-%EB%82%98%EC%9A%B0-%EB%AA%B0%EB%8F%84%EB%B0%94-2016-%EB%85%84-11-%EC%9B%94-16-%EC%9D%BC-pc-%ED%99%94%EB%A9%B4%EC%97%90-google-%EB%A1%9C%EA%B3%A0-google%EC%9D%80-google-inc-%EA%B0%80-%EC%86%8C%EC%9C%A0-%ED%95%9C-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B2%80%EC%83%89.jpg"
-            style="width: 150px; height: 100px"
+            style="width: 120px; height: 100px"
         /></a>
         <a href="https://www.kakaocorp.com/page/" target="_blank"
           ><img src="https://t1.kakaocdn.net/kakaocorp/corp_thumbnail/Kakao.png"
-          style="width: 150px; height: 100px;"</a
+          style="width: 120px; height: 100px;"</a
         >
         <a href="https://www.baemin.com/" target="_blank"
           ><img
             src="https://www.shinailbo.co.kr/news/photo/202304/1682383_845303_89.png"
-            style="width: 150px; height: 100px"
+            style="width: 120px; height: 100px"
         /></a>
       </nav>
       <nav class="footerText">
