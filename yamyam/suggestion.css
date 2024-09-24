@@ -1,7 +1,5 @@
 /* https://velog.io/@hsjsstn/HTML-%EA%B2%8C%EC%8B%9C%ED%8C%90-%EA%B8%80%EC%93%B0%EA%B8%B0-%EA%B5%AC%ED%98%84 */
-/*공지사항 테이블*/
-
-.notice {
+.suggestion {
   table-layout: fixed;
   width: 100%;
   padding: 10px;
@@ -16,6 +14,7 @@
 h1 {
   margin: 80px;
 }
+
 /*표 타이틀*/
 #header {
   background-color: rgba(5, 8, 34, 0.568);
@@ -23,8 +22,8 @@ h1 {
   font-size: 15px;
   text-align: center;
 }
-.notice td,
-.notice th {
+.suggestion td,
+.suggestion th {
   border-bottom: 1px lightgray solid;
   height: 30px;
   font-size: 1.1rem;

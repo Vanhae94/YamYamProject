@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>notice.html</title>
+    <title>수강평</title>
+    <link rel="stylesheet" href="review.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="main1.css" />
-    <link rel="stylesheet" href="notice.css" />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap");
     </style>
@@ -15,6 +16,9 @@
     <header>
       <nav>
         <ul class="fixmenu">
+          <li class="header">
+            <a><img src="../wpImages/logo.png" id="menulogo1" /></a>
+          </li>
           <li class="header">
             <a href="gnbSubmenu.html">학원 소개</a>
             <ul class="hovermenu">
@@ -60,18 +64,20 @@
               <li><a href="#">회원탈퇴</a></li>
             </ul>
           </li>
+          <li class="header">
+            <a><img src="../wpImages/logo.png" id="menulogo2" /></a>
+          </li>
         </ul>
       </nav>
 
       <div id="title">
         <a href="main1.html">
           <img src="../wpImages/mainbanners/headBanner.png" />
-          <h1></h1>
         </a>
       </div>
       <nav>
         <ul class="personal">
-          <li><a href="#">회원가입</a></li>
+          <li><a href="mypage5.html">회원가입</a></li>
           <li>|</li>
           <li><a href="mypage.html">로그인</a></li>
           <li>|</li>
@@ -80,33 +86,15 @@
       </nav>
     </header>
     <main>
-      <h1>|공지 사항</h1>
-      <div>
-        <table class="notice">
-          <tr id="header">
-            <td class="num">번호</td>
-            <td class="title">제목</td>
-            <td class="wirter">작성자</td>
-            <td class="writeDate">작성일</td>
-          </tr>
-          <!--
-          <script>
-            var i,
-              day = 20;
-            for (i = 10; i > 0; i--) {
-              document.write("<tr class='body'>");
-              document.write("<td>" + i + "</td>");
-              document.write("<td class='title'>제목입니다.</td>");
-              document.write("<td>작성자</td>");
-              document.write("<td>24-01-" + day-- + "</td>");
-              document.write("</tr>");
-            }
-          </script>-->
-        </table>
-        <br />
-        <button onclick="location.href='write.html'">글쓰기</button>
-        <button onclick="location.href='read.html'">읽기</button>
+      <h1>|수강평</h1>
+      <div id="cheers">당신의 요리사의 꿈을 <br />응원합니다.</div>
+      <div class="review">
+        <img width="1280px" src="../wpImages/reviews/review1.png" />
+        <img width="1280px" src="../wpImages/reviews/review2.png" />
+        <img width="1280px" src="../wpImages/reviews/review3.png" />
       </div>
     </main>
+
+    <img src="../wpImages/logo.png" id="logo" />
   </body>
 </html>

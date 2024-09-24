@@ -1,0 +1,39 @@
+h1 {
+  margin: 80px;
+}
+#cheers {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 800px;
+  height: 150px;
+  border-radius: 80%;
+  background-image: radial-gradient(
+    rgba(255, 228, 196, 0.61),
+    rgba(255, 255, 255, 0)
+  );
+  font-size: 50px;
+  font-weight: 900;
+  color: rgb(58, 57, 57);
+  letter-spacing: 5px;
+}
+.review {
+  margin-top: 100px;
+}
+.review img {
+  margin-bottom: 30px;
+}
+
+/* 하단 로고 */
+#logo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  justify-content: center;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,47 @@
+/* https://velog.io/@hsjsstn/HTML-%EA%B2%8C%EC%8B%9C%ED%8C%90-%EA%B8%80%EC%93%B0%EA%B8%B0-%EA%B5%AC%ED%98%84 */
+table {
+  margin: auto;
+  font-size: 15px;
+}
+h1,
+h2 {
+  margin-bottom: 50px;
+}
+
+input[type="text"] {
+  border: 1.5px rgba(5, 8, 34, 0.568) solid;
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+textarea {
+  border: 1.5px rgba(5, 8, 34, 0.568) solid;
+  width: 500px;
+  height: 400px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+  resize: none;
+}
+#header {
+  height: 50px;
+  font-size: 20px;
+}
+input[type="submit"] {
+  margin-bottom: 100px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgba(5, 8, 34, 0.568);
+}
+input[type="submit"]:active {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgba(139, 143, 175, 0.39);
+}
