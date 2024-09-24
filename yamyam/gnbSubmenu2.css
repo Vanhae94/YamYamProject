@@ -73,13 +73,17 @@ body {
 
 /* 내용 */
 
+h1{
+  font-size: 30px;
+}
+
 #gridbox {
   /* 찾아오시는 길 */
   display: grid;
   grid-template-areas:
     "iframe subject"
     "content";
-  grid-template-columns: 640px 640px;
+  grid-template-columns: repeat(2,320px) 640px;
   grid-template-rows: 50px 400px 400px 150px 150px 150px 150px;
 }
 
@@ -88,7 +92,7 @@ body {
   width: 640px;
   height: 760px;
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -97,42 +101,52 @@ body {
 
 #subject {
   /* 찾아오시는 길 제목 */
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  font-size: 70px;
+  font-size: 60px;
   color: orange;
   text-align: center;
   font-weight: 700;
-  margin-top: 80px;
-  margin-left: 40px;
+  margin-top: 10px;
   letter-spacing: 1px;
 }
 #road {
   /* 찾아오시는 길 내용 */
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
   font-size: 25px;
   color: rgb(53, 53, 53);
   text-align: center;
   font-weight: 400;
-  margin-top: 250px;
-  margin-left: 40px;
+  margin-top: 100px;
   letter-spacing: 1px;
-  line-height: 70px;
+  line-height: 50px;
+}
+
+#building{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 430px;
+  height: 380px;
+  margin-left: 100px;
+  margin-top: 320px;
+
 }
 
 .linkbutton {
   /* 링크 버튼*/
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  margin-top: 650px;
-  margin-left: 250px;
+  margin-top: 720px;
+  margin-left: 230px;
   /* 디자인*/
   display: flex;
   justify-content: center;
@@ -155,10 +169,10 @@ body {
 #address {
   /* 주소*/
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
-  justify-content: center;
+  text-align: right;
   color: orange;
   font-weight: 700;
   font-size: 35px;
@@ -167,25 +181,25 @@ body {
 
 #addrContent {
   /* 상세 주소*/
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 5;
   grid-row-start: 4;
   grid-row-end: 5;
-  text-align: center;
+  text-align: left;
   color: rgb(53, 53, 53);
   font-weight: 400;
   font-size: 25px;
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: -20px;
 }
 
 #car {
   /* 자동차*/
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 5;
   grid-row-end: 6;
-  text-align: center;
+  text-align: right;
   color: orange;
   font-weight: 700;
   font-size: 35px;
@@ -193,23 +207,23 @@ body {
 
 #carContent {
   /* 상세 자동차*/
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 5;
   grid-row-start: 5;
   grid-row-end: 6;
   text-align: left;
   color: rgb(53, 53, 53);
   font-weight: 400;
   font-size: 25px;
-  margin-left: 400px;
+  margin-left: -20px;
 }
 #subway {
   /* 지하철 */
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 6;
   grid-row-end: 7;
-  text-align: center;
+  text-align: right;
   color: orange;
   font-weight: 700;
   font-size: 35px;
@@ -217,8 +231,8 @@ body {
 
 #subwayContent {
   /* 상세 지하철 */
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 5;
   grid-row-start: 6;
   grid-row-end: 7;
   text-align: left;
@@ -226,15 +240,15 @@ body {
   font-weight: 400;
   font-size: 25px;
   margin-top: 10px;
-  margin-left: 400px;
+  margin-left: -20px;
 }
 #bus {
   /* 버스 */
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 7;
   grid-row-end: 8;
-  text-align: center;
+  text-align: right;
   color: orange;
   font-weight: 700;
   font-size: 35px;
@@ -242,8 +256,8 @@ body {
 
 #busContent {
   /* 상세 버스 */
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 5;
   grid-row-start: 7;
   grid-row-end: 8;
   text-align: left;
@@ -251,18 +265,106 @@ body {
   font-weight: 400;
   font-size: 25px;
   margin-top: 10px;
-  margin-left: 380px;
+  margin-left: -20px;
 }
 
 /* 공통: 하단 로고 */
 #logo {
-  height: 200px;
   display: block;
   margin-top: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
 }
+
+
+/*푸터 ----------------------------푸터-------------------*/
+
+.bannerLink {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: 150px;
+  column-gap: 30px;
+  justify-content: center;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 500px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.footerText ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
+}
+
+.footerText2 {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-template-rows: repeat(2, 100px) 50px;
+  justify-content: center;
+}
+
+#yamyam {
+  font-size: 2.5rem;
+  margin-bottom: 3px;
+}
+#yamyam2 {
+  font-size: 1.5rem;
+  margin-left: 138px;
+  margin-top: 0;
+}
+
+.footerText2 :nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.footerText2 :nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: left;
+}
+
+.footerText2 :nth-child(3) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: left;
+}
+
+.footerText2 :nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: left;
+}
+
+.footerText2 :nth-child(5) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  margin-top: 0;
+}
+.footerText ul li a {
+  text-decoration: none;
+}
+
+
+
 
 /* 하위 메뉴 애니메이션 */
 .header:hover .hovermenu {
