@@ -15,7 +15,10 @@ main {
   justify-content: center;
   height: 100%;
 }
-
+#middletitle {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 #user {
   width: 650px;
   height: 450px;

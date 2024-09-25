@@ -18,7 +18,10 @@ main {
 * {
   box-sizing: border-box;
 }
-
+#middletitle {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 #user {
   width: 850px;
   height: 1000px;

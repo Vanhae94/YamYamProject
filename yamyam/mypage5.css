@@ -1,157 +1,8 @@
-
-body {
-  width: 1280px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  height: 0% auto;
-}
-
-/*.hahmlet {
-  font-family: "Hahmlet", serif;
-  font-optical-sizing: auto;
-  font-weight: 500px;
-  font-style: normal;
-   <uniquifier>: Use a unique and descriptive class name
-    <weight>: Use a value from 100 to 900 
-}*/
-
-/*---------------헤더----------------*/
-.fixmenu {
-  /* 메뉴 */
-  position: relative;
-  color: black;
-  display: flex;
-  width: 1280px;
-  height: 30px;
-  gap: 60px;
-  padding: 0;
-  justify-content: center;
-  background-color: #e9e9e9c2;
-  border: 2px solid #c0c0c0;
-  border-radius: 30px;
-}
-.header {
-  list-style: none;
-  position: relative;
-  line-height: 30px;
-  text-align: center;
-  font-family: "Hahmlet", serif;
-  font-optical-sizing: auto;
-  font-weight: 200px;
-  font-style: normal;
-  font-size: 20px;
-}
-
-#menulogo1 {
-  width: 50px;
-  height: 40px;
-  margin-left: 50px;
-  vertical-align: middle;
-  position: relative;
-}
-#menulogo2 {
-  width: 50px;
-  height: 40px;
-  margin-right: 30px;
-  vertical-align: middle;
-  position: relative;
-}
-#title a {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 200px;
-  text-decoration: none;
-  color: inherit;
-}
-#title a img {
-  width: 100%;
-  height: 200px;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-#title h1 {
-  font-size: 2rem;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  align-self: end;
-  letter-spacing: 6px;
-  margin-bottom: -30px;
-}
-.header {
-  width: 120px;
-}
-
-/* 하위메뉴 숨기기*/
-.hovermenu {
-  background-color: rgba(253, 214, 85, 0.623);
-  text-align: left;
-  position: absolute;
-  /*top: 20%;*/
-  list-style: none;
-  display: none;
-  /*display: none; /* 처음엔 숨김 */
-  z-index: 999;
-}
-
-/* 서브 메뉴 항목 스타일 */
-.hovermenu li a {
-  margin-top: 3px;
-  margin-bottom: 5px;
-  width: 120px;
-  display: block;
-  text-decoration: none;
-  font-size: 85%;
-  margin-left: -30px;
-  text-indent: 0%;
-}
-.header:hover .hovermenu {
-  display: block; /* 마우스가 올라가면 하위 메뉴 표시 */
-  animation: slideDown 0.5s ease-out; /* 슬라이드 다운 효과 */
-}
-/*#title {
-  margin-top: 50px;
-  text-shadow: -2px -2px rgb(153, 43, 9), -1px 1px rgb(201, 87, 11);
-  color: rgb(247, 161, 50);
-  text-align: center;
-  width: 1300px;
-}*/
-.personal {
-  position: relative;
-  margin-top: -20px;
-  margin-bottom: 30px;
-  list-style: none;
-  padding: 0;
-  width: 1280px;
-  display: flex;
-  gap: 10px; /* 아이템 사이 간격 */
-  justify-content: right;
-}
-.personal li {
-  display: inline;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* ----------------------------------------- 회원가입 창 */
 body {
-  width: 1200px;
+  width: 1280px;
   margin: 0 auto;
-  text-align: center; 
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -162,13 +13,15 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%; 
+  height: 100%;
 }
 
-
 * {
-    box-sizing: border-box;
-
+  box-sizing: border-box;
+}
+#middletitle {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 #user {
   width: 800px;
@@ -180,68 +33,63 @@ main {
   background-color: #fff;
   padding: 20px;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
-  gap: 20px; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 #user > fieldset {
-  margin: 0; 
+  margin: 0;
   border: none;
 }
 
 #user > fieldset > legend {
   position: absolute;
-  left: -999999px; 
+  left: -999999px;
 }
 
 label {
   display: flex;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   margin-bottom: 20px;
 }
 
-
 label h1 {
   font-size: 14px;
-  margin: 0; 
-  margin-right: 20px; 
+  margin: 0;
+  margin-right: 20px;
 }
-
 
 input {
   background-color: #eaeaea;
-  width: 320px; 
-  height: 50px; 
+  width: 320px;
+  height: 50px;
   border: 1px solid black;
   margin-bottom: 0px;
 }
 
 button[type="submit"] {
-  width: 149px; 
-  height: 50px; 
+  width: 149px;
+  height: 50px;
   border: 1px solid #000;
   color: #ffffff;
   background-color: rgb(231, 180, 86);
-  margin-top: -20px; 
+  margin-top: -20px;
 }
 
 .button-container {
   display: flex;
-  gap: 20px; 
-  margin-bottom: 10px; 
-  margin-left: 15px; 
+  gap: 20px;
+  margin-bottom: 10px;
+  margin-left: 15px;
 }
-
 
 .email-container {
   display: flex;
   align-items: center;
-  
 }
-
 
 .passwordHint-container {
   display: flex; /* Flexbox 활성화 */
@@ -251,8 +99,6 @@ button[type="submit"] {
 
 .passwordHint-input {
   width: 160px; /* 입력란 너비를 절반으로 조정 */
-
-  
 }
 .passwordHint-select {
   height: 50px; /* 같은 높이로 설정 */
@@ -270,8 +116,7 @@ button[type="submit"] {
 .birthday-input {
   width: 320px; /* 입력란 너비 조정 (필요 시) */
 }
-.email-input
-{
+.email-input {
   width: 146px; /* 너비 조정 */
   height: 50px;
   border: 1px solid black;
@@ -302,7 +147,7 @@ button[type="submit"] {
   border: 1px solid #000; /* 테두리 설정 */
   border-radius: 2px; /* 모서리 둥글게 */
   cursor: pointer; /* 커서 모양 변경 */
-  margin-right: 13px; 
+  margin-right: 13px;
 }
 
 /* 체크박스를 체크했을 때의 스타일 */
@@ -313,7 +158,7 @@ button[type="submit"] {
 }
 
 .checkbox-container input[type="checkbox"]:checked::after {
-  content: ''; /* 체크 표시 추가 */
+  content: ""; /* 체크 표시 추가 */
   position: absolute;
   left: 3px; /* 체크 표시 위치 조정 */
   top: 7px; /* 체크 표시 위치 조정 */
@@ -322,79 +167,4 @@ button[type="submit"] {
   border: solid white; /* 체크 표시 색상 */
   border-width: 0 1px 1px 0; /* 체크 표시 형태 */
   transform: rotate(45deg); /* 체크 표시 회전 */
-  
-}
-
-/*푸터 ----------------------------푸터-------------------*/
-
-
-.footerText ul {
-  margin-top: 400px;
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  padding: 5px;
-}
-
-.footerText2 {
-  display: grid;
-  grid-template-columns: repeat(3, 380px);
-  grid-template-rows: repeat(2, 100px) 50px;
-  justify-content: center;
-}
-
-#yamyam {
-  font-size: 2.5rem;
-  margin-bottom: 3px;
-}
-#yamyam2 {
-  font-size: 1.5rem;
-  margin-left: 138px;
-  margin-top: 0;
-}
-
-.footerText2 :nth-child(1) {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.footerText2 :nth-child(2) {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  text-align: left;
-}
-
-.footerText2 :nth-child(3) {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  text-align: left;
-}
-
-.footerText2 :nth-child(4) {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  text-align: left;
-}
-
-.footerText2 :nth-child(5) {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  text-align: center;
-  margin-top: 0;
-}
-.footerText ul li a {
-  text-decoration: none;
 }
