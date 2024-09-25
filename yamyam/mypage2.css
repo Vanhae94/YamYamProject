@@ -1,5 +1,4 @@
 /*  개인정보변경창*/
-
 body {
   width: 1280px;
   margin: 0 auto;
@@ -72,7 +71,7 @@ input {
 }
 
 button[type="submit"] {
-  width: 149px;
+  width: 150px;
   height: 50px;
   border: 1px solid #000;
   color: #ffffff;
