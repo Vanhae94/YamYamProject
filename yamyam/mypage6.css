@@ -1,3 +1,5 @@
+
+
 body {
   width: 1280px;
   margin: 0 auto;
@@ -170,4 +172,78 @@ button[type="submit"] {
   background-color: #eaeaea; /* 배경 색상 */
   border: 1px solid black; /* 테두리 설정 */
   margin-left: 10px; /* 입력 필드 왼쪽 여백 추가 */
+}
+
+/*푸터 ----------------------------푸터-------------------*/
+
+
+.footerText ul {
+  margin-top: 400px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
+}
+
+.footerText2 {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-template-rows: repeat(2, 100px) 50px;
+  justify-content: center;
+}
+
+#yamyam {
+  font-size: 2.5rem;
+  margin-bottom: 3px;
+}
+#yamyam2 {
+  font-size: 1.5rem;
+  margin-left: 138px;
+  margin-top: 0;
+}
+
+.footerText2 :nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.footerText2 :nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: left;
+}
+
+.footerText2 :nth-child(3) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: left;
+}
+
+.footerText2 :nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: left;
+}
+
+.footerText2 :nth-child(5) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  margin-top: 0;
+}
+.footerText ul li a {
+  text-decoration: none;
 }
