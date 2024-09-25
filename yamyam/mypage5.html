@@ -67,7 +67,7 @@
               <li><a href="notice.html">공지사항</a></li>
               <li><a href="suggestion.html">건의사항</a></li>
               <li><a href="review.html">소중한 수강평</a></li>
-              </ul>
+            </ul>
           </li>
           <li class="header">
             <a href="mypage.html">마이페이지</a>
@@ -84,51 +84,78 @@
         </ul>
       </nav>
     </header>
-
-</head>
-<main>
-    <body>
-
+    <main>
+      <div id="middletitle">
+        <h1>Yam Yam Academy 회원가입</h1>
+      </div>
       <form action="#" id="user">
-        <fieldset><div id="middletitle">
-          <h1>Yam Yam Academy 회원가입</h1></div>
-          
+        <fieldset>
           <label for="userID">
-            <h1> &nbsp;&nbsp;아&nbsp;&nbsp;이&nbsp;&nbsp;디&nbsp;&nbsp;</h1>
+            <h1>&nbsp;&nbsp;아&nbsp;&nbsp;이&nbsp;&nbsp;디&nbsp;&nbsp;</h1>
             <input type="text" id="userID" name="userID" placeholder="아이디" />
           </label>
-          
+
           <label for="username">
-            <h1> &nbsp;&nbsp;이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 &nbsp;&nbsp;</h1>
-            <input type="text" id="username" name="username" placeholder="이름" />
+            <h1>
+              &nbsp;&nbsp;이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름
+              &nbsp;&nbsp;
+            </h1>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="이름"
+            />
           </label>
-          
+
           <label for="password">
-            <h1> &nbsp;&nbsp;&nbsp;비밀번호&nbsp;&nbsp;&nbsp;</h1>
-            <input type="password" id="password" name="password" placeholder="비밀번호" />
+            <h1>&nbsp;&nbsp;&nbsp;비밀번호&nbsp;&nbsp;&nbsp;</h1>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="비밀번호"
+            />
           </label>
-          
+
           <label for="passwordConfirm">
-            <h1> 비밀번호&nbsp;확인</h1>
-            <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="비밀번호 확인" />
+            <h1>비밀번호&nbsp;확인</h1>
+            <input
+              type="password"
+              id="passwordConfirm"
+              name="passwordConfirm"
+              placeholder="비밀번호 확인"
+            />
           </label>
 
           <label for="passwordHint">
             <div class="passwordHint-container">
-              <h1> 비밀번호 힌트 </h1>
-              <select name="passwordHint" id="passwordselect" onchange="HintCheck();" class="passwordHint-select">
+              <h1>비밀번호 힌트</h1>
+              <select
+                name="passwordHint"
+                id="passwordselect"
+                onchange="HintCheck();"
+                class="passwordHint-select"
+              >
                 <option value="0" selected="selected">비밀번호 힌트</option>
                 <option value="내가 태어난 곳">내가 태어난 곳</option>
                 <option value="기억에 남는 장소">기억에 남는 장소</option>
                 <option value="나의 고향은?">나의 고향은?</option>
                 <option value="내가 나온 학교">내가 나온 학교</option>
               </select>
-              <input type="text" id="passwordHint" name="passwordHint" class="passwordHint-input" />
+              <input
+                type="text"
+                id="passwordHint"
+                name="passwordHint"
+                class="passwordHint-input"
+              />
             </div>
           </label>
 
           <label for="useremail">
-            <h1> &nbsp;&nbsp;&nbsp;이&nbsp;&nbsp;메&nbsp;&nbsp;일&nbsp;&nbsp;&nbsp; </h1>
+            <h1>
+              &nbsp;&nbsp;&nbsp;이&nbsp;&nbsp;메&nbsp;&nbsp;일&nbsp;&nbsp;&nbsp;
+            </h1>
             <div class="email-container">
               <input
                 type="text"
@@ -146,109 +173,107 @@
                 class="domain-input"
               />
 
-            <select name="domain" id="domainSelect" onchange="domainCheck();" class="domain-select">
-              <option value="0" selected="selected">직접입력</option>
-              <option value="naver.com">naver.com</option>
-              <option value="hanmail.net">hanmail.net</option>
-              <option value="nate.com">nate.com</option>
-              <option value="yahoo.com">yahoo.com</option>
-            </select>
+              <select
+                name="domain"
+                id="domainSelect"
+                onchange="domainCheck();"
+                class="domain-select"
+              >
+                <option value="0" selected="selected">직접입력</option>
+                <option value="naver.com">naver.com</option>
+                <option value="hanmail.net">hanmail.net</option>
+                <option value="nate.com">nate.com</option>
+                <option value="yahoo.com">yahoo.com</option>
+              </select>
             </div>
           </label>
         </fieldset>
         <div class="checkbox-container">
           <label>
-            <input type="checkbox" name="check" value="check1">정보 메일을 수신합니다.
+            <input type="checkbox" name="check" value="check1" />정보 메일을
+            수신합니다.
           </label>
           <label>
-            <input type="checkbox" name="check" value="check2">핸드폰 문자메세지를 수신합니다.
+            <input type="checkbox" name="check" value="check2" />핸드폰
+            문자메세지를 수신합니다.
           </label>
         </div>
         <div class="button-container">
           <button type="submit">회원가입</button>
           <button type="submit">뒤로가기</button>
         </div>
-
       </form>
-
       <script>
         function domainCheck() {
           const selectElement = document.getElementById("domainSelect");
           const inputElement = document.getElementById("useremailDomain");
-          
+
           // 선택된 옵션의 값을 도메인 입력란에 설정
-          inputElement.value = selectElement.value !== "0" ? selectElement.value : '';
+          inputElement.value =
+            selectElement.value !== "0" ? selectElement.value : "";
         }
-      
       </script>
-      
-      </body>
-
-</main>
-
-<footer>
-  <nav class="bannerLink">
-    <a href="https://www.naver.com/" target="_blank"
-      ><img
-        src="https://play-lh.googleusercontent.com/YW_Rd7EUbZZ6gyEblSbXHGSPOy54FzBgtFmWgCSYioTskmhP5n1-L-Ay7fCdE0RUvzI=w240-h480-rw"
-        style="width: 120px; height: 100px"
-    /></a>
-    <a href="https://www.google.com/" target="_blank"
-      ><img
-        src="https://previews.123rf.com/images/kornienko/kornienko1611/kornienko161100200/66047248-%ED%82%A4%EC%8B%9C-%EB%82%98%EC%9A%B0-%EB%AA%B0%EB%8F%84%EB%B0%94-2016-%EB%85%84-11-%EC%9B%94-16-%EC%9D%BC-pc-%ED%99%94%EB%A9%B4%EC%97%90-google-%EB%A1%9C%EA%B3%A0-google%EC%9D%80-google-inc-%EA%B0%80-%EC%86%8C%EC%9C%A0-%ED%95%9C-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B2%80%EC%83%89.jpg"
-        style="width: 120px; height: 100px"
-    /></a>
-    <a href="https://www.kakaocorp.com/page/" target="_blank"
-      ><img src="https://t1.kakaocdn.net/kakaocorp/corp_thumbnail/Kakao.png"
-      style="width: 120px; height: 100px;"</a
-    >
-    <a href="https://www.baemin.com/" target="_blank"
-      ><img
-        src="https://www.shinailbo.co.kr/news/photo/202304/1682383_845303_89.png"
-        style="width: 120px; height: 100px"
-    /></a>
-  </nav>
-  <nav class="footerText">
-    <ul>
-      <li><a href="#">Yam Yam 블로그</a></li>
-      <li>|</li>
-      <li><a href="gnbSubmenu.html">학원소개</a></li>
-      <li>|</li>
-      <li><a href="#">이용약관</a></li>
-      <li>|</li>
-      <li><a href="#" style="color: blue">개인정보처리방침</a></li>
-      <li>|</li>
-      <li><a href="notice.html">게시판</a></li>
-      <li>|</li>
-      <li><a href="mypage.html">마이페이지</a></li>
-    </ul>
-  </nav>
-  <div class="footerText2">
-    <div class="yam">
-      <p id="yamyam">Yam Yam<br />Academy</p>
-      <p id="yamyam2">(주)얌얌</p>
-    </div>
-      <p>
-          | 상호명 : Yam Yam Academy<br>
+    </main>
+    <footer>
+      <nav class="bannerLink">
+        <a href="https://www.naver.com/" target="_blank"
+          ><img
+            src="https://play-lh.googleusercontent.com/YW_Rd7EUbZZ6gyEblSbXHGSPOy54FzBgtFmWgCSYioTskmhP5n1-L-Ay7fCdE0RUvzI=w240-h480-rw"
+            style="width: 120px; height: 100px"
+        /></a>
+        <a href="https://www.google.com/" target="_blank"
+          ><img
+            src="https://previews.123rf.com/images/kornienko/kornienko1611/kornienko161100200/66047248-%ED%82%A4%EC%8B%9C-%EB%82%98%EC%9A%B0-%EB%AA%B0%EB%8F%84%EB%B0%94-2016-%EB%85%84-11-%EC%9B%94-16-%EC%9D%BC-pc-%ED%99%94%EB%A9%B4%EC%97%90-google-%EB%A1%9C%EA%B3%A0-google%EC%9D%80-google-inc-%EA%B0%80-%EC%86%8C%EC%9C%A0-%ED%95%9C-%EA%B0%80%EC%9E%A5-%ED%81%B0-%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B2%80%EC%83%89.jpg"
+            style="width: 120px; height: 100px"
+        /></a>
+        <a href="https://www.kakaocorp.com/page/" target="_blank"
+          ><img src="https://t1.kakaocdn.net/kakaocorp/corp_thumbnail/Kakao.png"
+          style="width: 120px; height: 100px;"</a
+        >
+        <a href="https://www.baemin.com/" target="_blank"
+          ><img
+            src="https://www.shinailbo.co.kr/news/photo/202304/1682383_845303_89.png"
+            style="width: 120px; height: 100px"
+        /></a>
+      </nav>
+      <nav class="footerText">
+        <ul>
+          <li><a href="#">Yam Yam 블로그</a></li>
+          <li>|</li>
+          <li><a href="gnbSubmenu.html">학원소개</a></li>
+          <li>|</li>
+          <li><a href="#">이용약관</a></li>
+          <li>|</li>
+          <li><a href="#" style="color: blue">개인정보처리방침</a></li>
+          <li>|</li>
+          <li><a href="notice.html">게시판</a></li>
+          <li>|</li>
+          <li><a href="mypage.html">마이페이지</a></li>
+        </ul>
+      </nav>
+      <div class="footerText2">
+        <div class="yam">
+          <p id="yamyam">Yam Yam<br />Academy</p>
+          <p id="yamyam2">(주)얌얌</p>
+        </div>
+        <p>
+          | 상호명 : Yam Yam Academy<br />
           | 사업자등록번호 : 000-00-0000
-      </p>
-      <p>
-          | 대표자 : 이지성<br>
-          | 교육업 신고번호 : 0000-서울강동-0000<br>
-          | 개인정보관리책임자 : 심현정<br>
+        </p>
+        <p>
+          | 대표자 : 이지성<br />
+          | 교육업 신고번호 : 0000-서울강동-0000<br />
+          | 개인정보관리책임자 : 심현정<br />
           | 호스팅 제공 사업자 : ㅇㅇㅇㅇㅇ
-      </p>
-      <p>
-          | 주소 : 서울특별시 강동구 천호대로157길 14 쇼핑몰나비관리단 6층 8층<br>
-          | TEL : 070-000-0000 | FAX : (02)000-0000 | Email : yamyam@naver.com<br>
-      </p>
-      <p>
-          Copyright 2024 얌얌학원 Corp. All Right Reserved.
-      </p>
-
-  </div>
-</footer>
-</body>
-
-
+        </p>
+        <p>
+          | 주소 : 서울특별시 강동구 천호대로157길 14 쇼핑몰나비관리단 6층
+          8층<br />
+          | TEL : 070-000-0000 | FAX : (02)000-0000 | Email :
+          yamyam@naver.com<br />
+        </p>
+        <p>Copyright 2024 얌얌학원 Corp. All Right Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>

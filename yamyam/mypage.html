@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="main1.css" />
     <link rel="stylesheet" href="mypage.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap");
+    </style>
   </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap");
-  </style>
   <body>
     <header>
       <div id="title">
@@ -85,32 +85,39 @@
       </nav>
     </header>
     <main>
-      <body>
-        <div id="middletitle"><h1>Yam Yam Academy 로그인</h1></div>
-        <form action="#" id="login">
-          <fieldset>
-            <legend>일반 로그인</legend>
-            <label for="username">
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="아이디"
-              />
-            </label>
-            <label for="password">
-              <input
-                type="password"
-                id="password"
-                name="password"
-                placeholder="비밀번호"
-              />
-            </label>
-            <button type="submit">확인</button>
-          </fieldset>
-          <a href="mypage3.html"> 아이디/비밀번호 찾기</a>
-        </form>
-      </body>
+      <div id="middletitle"><h1>Yam Yam Academy 로그인</h1></div>
+      <form action="#" id="login">
+        <fieldset>
+          <legend>일반 로그인</legend>
+          <label for="userID"
+            ><h1>아&nbsp;&nbsp;이&nbsp;&nbsp;디</h1>
+            <style>
+              label[for="userID"] h1 {
+                font-size: 14px;
+              }
+            </style>
+            <input type="text" id="userID" name="userID" placeholder="아이디" />
+          </label>
+
+          <label for="password"
+            ><h1>아&nbsp;&nbsp;이&nbsp;&nbsp;디</h1>
+            <style>
+              label[for="userID"] h1 {
+                font-size: 14px;
+              }
+            </style>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="비밀번호"
+            />
+          </label>
+
+          <button type="submit">확인</button>
+        </fieldset>
+        <a href="mypage3.html"> 아이디/비밀번호 찾기</a>
+      </form>
     </main>
 
     <footer>
