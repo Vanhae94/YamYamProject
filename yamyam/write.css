@@ -3,6 +3,9 @@ table {
   margin: auto;
   font-size: 15px;
 }
+h1 {
+  margin: 80px;
+}
 h1,
 h2 {
   margin-bottom: 50px;
@@ -32,7 +35,9 @@ input[type="submit"] {
   margin-bottom: 100px;
   width: 100px;
   height: 30px;
-  font-size: 15px;
+  font-size: 18px;
+  color: aliceblue;
+  font-weight: bold;
   border: 0;
   border-radius: 5px;
   background-color: rgba(5, 8, 34, 0.568);

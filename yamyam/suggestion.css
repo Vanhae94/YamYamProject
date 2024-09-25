@@ -61,6 +61,5 @@ button:active {
   font-size: 15px;
   border: 0;
   border-radius: 5px;
-  outline: 1.5px rgb(216, 177, 126) solid;
-  background-color: rgb(255, 223, 164);
+  background-color: rgba(139, 143, 175, 0.39);
 }
