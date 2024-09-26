@@ -74,7 +74,14 @@ button[type="submit"] {
   border: 1px solid #000;
   color: #ffffff;
   background-color: rgb(231, 180, 86);
+  cursor: pointer; 
 }
+
+
+button:hover {
+  background-color: rgb(200, 150, 70); 
+}
+
 
 .button-container {
   display: flex;

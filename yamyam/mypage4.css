@@ -72,6 +72,12 @@ button[type="submit"] {
   color: #ffffff;
   background-color: rgb(231, 180, 86);
   margin-top: 10px;
+  cursor: pointer; 
+}
+
+
+button:hover {
+  background-color: rgb(200, 150, 70); 
 }
 
 .button-container {
@@ -79,9 +85,27 @@ button[type="submit"] {
   gap: 30px;
   margin-bottom: 30px;
   margin-top: 20px; /* 원하는 간격 추가 */
-  margin-left: 62px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+
+.passwordHint-container {
+  display: flex;
+  align-items: center; 
+  gap: 0px;
+}
+
+.passwordHint-input {
+  width: 146px;
+  margin-left: 5px;
+}
+
+.passwordHint-select {
+  height: 50px; 
+  padding: 8px; 
+  width: 146px; 
+  margin-right: 20px; 
 }
