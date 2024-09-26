@@ -21,7 +21,7 @@
       </div>
       <nav>
         <ul class="personal">
-          <li><a href="mypage5.html">회원가입</a></li>
+          <li><a href="mypage5-1.html">회원가입</a></li>
           <li>|</li>
           <li><a href="mypage.html">로그인</a></li>
           <li>|</li>
@@ -85,6 +85,10 @@
       </nav>
     </header>
     <main>
+        <!-- 화면에 표시될 원본 보기 영역 - 기본적으로 숨겨진 상태이다. -->
+   <div class="gray_layer" id="background"></div>
+   <div class="over_layer" id="front"></div>
+  <!--커리큘럼 end 모달팝업table-->
     <h1 class="title">
       <strong
         >|&nbsp;&nbsp;&nbsp;일식 조리 자격증
@@ -184,10 +188,10 @@
               height="200"
             /><br />김초밥, 생선초밥
           </th>
-          <th>
-            <a href="../wpImages/recipe/chamchikimbab.png">
+          <th class="item pull-left">
+            <a href="../wpImages/recipe/chamchikimbab.png"  class="modal">
               <img
-                src="../wpImages/food/japanese/tunachobab.png"
+                src="../wpImages/food/japanese/tunachobab.png" alt="tunachobab"
                 width="200"
                 height="200" /></a
             ><br />참치김초밥
@@ -219,21 +223,20 @@
     <video src="./Schindler.mp4" controls></video>
   </nav>
 </main>
-<footer>
+
   <nav class="footerText">
     <ul>
-      <li><a href="gnbSubmenu.html">학원소개</a></li>
-      <li>|</li>
-      <li>
-        <a href="mypage5-1.html" style="color: blue"
-          >이용약관 및 개인정보처리방침
-        </a>
-      </li>
-      <li>|</li>
-      <li><a href="notice.html">게시판</a></li>
-      <li>|</li>
-      <li><a href="mypage.html">마이페이지</a></li>
-    </ul>
+      <!--<li><a href="#">Yam Yam 블로그</a></li>-->
+        <li>|</li>
+        <li><a href="gnbSubmenu.html">학원소개</a></li>
+        <li>|</li>
+        <a href="policy.html" style="color: blue">이용약관 및 개인정보처리방침</a></li>
+        <li>|</li>
+        <li><a href="notice.html">공지사항</a></li>
+        <li>|</li>
+        <li><a href="mypage6.html">회원탈퇴</a></li>
+        <li>|</li>
+      </ul>
   </nav>
   <div class="footerText2">
     <div class="yam">
@@ -242,23 +245,45 @@
     </div>
     <p>
       | 상호명 : Yam Yam Academy<br />
-      | 사업자등록번호 : 000-00-0000
+      | 사업자등록번호 : 123-45-6789
     </p>
     <p>
       | 대표자 : 이지성<br />
-      | 교육업 신고번호 : 0000-서울강동-0000<br />
+      | 교육업 신고번호 : 2580-서울강동-1346<br />
       | 개인정보관리책임자 : 심현정<br />
       | 호스팅 제공 사업자 : 채수영
     </p>
     <p>
       | 주소 : 서울특별시 강동구 천호대로157길 14 쇼핑몰나비관리단 6층
       8층<br />
-      | TEL : 070-000-0000 | FAX : (02)000-0000 | Email :
+      | TEL : 070-123-4567 | FAX : (02)891-2345 | Email :
       yamyam@naver.com<br />
     </p>
     <p>Copyright 2024 얌얌학원 Corp. All Right Reserved.</p>
   </div>
-</footer>
+  </footer>
+
   </body>
 
 </html>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $('.modal').on('click',function(e){
+            //a태그가 가진 이벤트 막기
+            e.preventDefault();
+
+            $("#background").fadeIn(200);  //배경 레이어
+            $("#front").fadeIn(200);  //이미지 레이어
+
+            let src = $(this).attr('href'); // 클릭한 링크의 href 속성값
+            let img = "<img src='" + src +"'/>"; //이미지 태그 구성 
+            $('#front').html(img);
+
+        });
+
+        //화면에 표시된 배경 레이어를 클릭한 경우
+       $('#background').click(function(){
+        $(this).fadeOut(200);
+        $("#front").fadeOut(200);
+       }); 
+</script>

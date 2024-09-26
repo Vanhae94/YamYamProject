@@ -1,0 +1,48 @@
+body {
+  width: 1280px;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin: 0 auto;
+  height: 0% auto;
+}
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #333;
+  margin-top: 50px;
+  font-size: 1.2em;
+}
+
+.terms-box {
+  width: 1000px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.terms-section {
+  margin-left: 140px;
+  margin-top: 100px;
+}
+
+#logo {
+  text-align: center;
+  margin-top: 100px;
+}

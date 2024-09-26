@@ -36,26 +36,14 @@
 #comment {
   margin: 150px;
 }
-/*커리큘럼*/
-#curri {
-  font-size: 24px;
-  font-weight: bold;
-  /*border: 1px solid red;*/
-  margin: 30px;
-  top: 50%;
-  background-color: #0a0a23;
-  color: #fff;
+/*------------커리큘럼--------------*/
+
+table button {
   border: none;
-  border-radius: 10px;
-}
-#curri:hover {
-  outline-color: transparent;
-  outline-style: solid;
-  box-shadow: 0 0 0 4px #f39c2a;
 }
 table img:hover {
   outline-color: transparent;
-  outline-style: solid;
+  outline-style: 0px none;
   box-shadow: 0 0 0 4px #f39c2a;
 }
 table {
@@ -90,7 +78,6 @@ td {
   letter-spacing: 1px;
   text-shadow: 2px 4px rgb(184, 184, 184);
 }
-
 /*-------모달팝업---------*/
 /** 화면 전체를 덮는 배경 레이어의 위치, 크기, 투명도 지정 > 기본적으로 표시되지 않도록 설정 */
 .gray_layer {
