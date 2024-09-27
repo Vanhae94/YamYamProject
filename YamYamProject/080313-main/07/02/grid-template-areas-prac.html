@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grid-basic.css">
+    <style>
+        .grid-container{
+        display:grid;
+        grid-template-areas:
+        "header header header"
+        "sidebar menu menu"
+        "sidebar content content"
+        "footer footer footer";
+    }
+
+    #h1{
+        grid-area: header;
+    }
+    #s1{
+        grid-area: sidebar;
+    }
+    #m1{
+        grid-area: menu;
+    }
+    #c1{
+        grid-area: content;
+    }
+    #f1{
+        grid-area: footer;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <p id="header" class="grid-item">header</p>
+        <p id="header" class="grid-item">sidebar</p>
+        <p id="header" class="grid-item">menu</p>
+        <p id="header" class="grid-item">content</p>
+        <p id="header" class="grid-item">footer</p>
+    </div>
+
+</body>
+</html>

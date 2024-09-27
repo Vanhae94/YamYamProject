@@ -1,0 +1,17 @@
+p, #title, .red{
+    color: red;
+}
+.box  p {
+    color: blue;
+    display: inline;
+}
+h1 ~ h2{
+    color: green;
+
+}
+#p155 > p::before {
+    content: "<<머리말>>";
+}
+#p155 > p::after {
+    content: "<<바닥글>>";
+}

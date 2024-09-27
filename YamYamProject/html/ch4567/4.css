@@ -1,0 +1,46 @@
+a:link {
+    color: orange
+}
+a:visited {
+    color: green;
+}
+#p156 > p:active{
+    color: red;
+    font-size: 20px;
+}
+a+p:hover{
+    color:blue;
+    font-size: 40px;
+}
+input[name="userpw"]:focus{
+    color: red;
+}
+input[name="userphone"]:focus{
+    color: gray;
+    font-size: 15px;
+}
+input:checked + label{
+    font-weight: 800;
+    font-size: 2rem;
+}
+input:checked + label[for="banana"]{
+    color: yellow;
+}
+input:checked + label[for="apple"]{
+    color: red;
+}
+input:checked + label[for="orange"]{
+    color: orange;
+}
+input[name="userid"]:disabled{
+    background-color:#ccc;
+}
+input[name="userpw"]:enabled{
+    background-color: #e4f38d;
+}
+div:hover > button {
+    background-color: aquamarine;
+}
+div:hover > button:nth-child(2) {
+    background-color: blue;
+}

@@ -1,0 +1,39 @@
+*{
+    color:aquamarine
+
+}
+#ss{
+    color: green;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+#aa{
+    color: rgba(30, 32, 167, 0.836)
+}
+.c1{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 10px;
+}
+.c2{
+    font-style: oblique;
+    font-size: 60px;
+    color: brown;
+}
+a[href]{
+    display: block;
+    color: rgb(83, 1, 46);
+}
+#title[href] {
+    color: plum;
+    font-style: italic;
+}
+.title[href] {
+    color: blueviolet;
+    font-weight: 800;
+}
+[class^="ab"] {
+    display: block;
+}
+[name$='b']{
+    display: block;
+}

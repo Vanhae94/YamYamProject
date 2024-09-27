@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://www.gilbut.co.kr" class="bbb">길벗</a>
+    <button onclick="c()">네이버로 고치기</button>
+</body>
+<script>
+    const c = () => {
+
+    const aE1 = document.querySelector("a");
+    const href = aE1.getAttribute("href");
+    alert(href);
+    const c = aE1.getAttribute("class");
+    alert(c);
+    aE1.setAttribute("href","http://www.naver.com");
+    aE1.innerText = "네이버";
+    aE1.removeAttribute("href");
+}
+</script>
+</html>

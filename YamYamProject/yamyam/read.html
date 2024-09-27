@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>header.html</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main1.css" />
+    <link rel="stylesheet" href="read.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap");
+      </style>
+  </head>
+  <body>
+    <header>
+      <div id="title">
+        <a href="main1.html">
+          <img src="../wpImages/mainbanners/headBanner.png" />
+          <h1></h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="personal">
+          <li>|</li>
+          <li><a href="mypage5-1.html">회원가입</a></li>
+          <li>|</li>
+          <li><a href="mypage.html">로그인/로그아웃</a></li>
+          <li>|</li>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="fixmenu">
+          <li class="header">
+            <a><img src="../wpImages/logo.png" id="menulogo1" /></a>
+          </li>
+          <li class="header">
+            <a href="gnbSubmenu.html">학원 소개</a>
+            <ul class="hovermenu">
+              <li><a href="gnbSubmenu.html">학원 소개</a></li>
+              <li><a href="gnbSubmenu2.html">찾아오시는 길</a></li>
+            </ul>
+          </li>
+          <li class="header">
+            <a href="korean.html">한식 과정</a>
+            <ul class="hovermenu">
+              <li><a href="korean.html">강사 소개</a></li>
+              <li><a href="koreaCurri.html">수업 커리큘럼</a></li>
+            </ul>
+          </li>
+          <li class="header">
+            <a href="chinese.html">중식 과정</a>
+            <ul class="hovermenu">
+              <li><a href="chinese.html">강사 소개</a></li>
+              <li><a href="chinaCurri.html">수업 커리큘럼</a></li>
+            </ul>
+          </li>
+          <li class="header">
+            <a href="japanese.html">일식 과정</a>
+            <ul class="hovermenu">
+              <li><a href="japanese.html">강사 소개</a></li>
+              <li><a href="japanCurri.html">수업 커리큘럼</a></li>
+            </ul>
+          </li>
+          <li class="header">
+            <a href="notice.html">게 시 판</a>
+            <ul class="hovermenu">
+              <li><a href="notice.html">공지사항</a></li>
+              <li><a href="suggestion.html">건의사항</a></li>
+              <li><a href="review.html">소중한 수강평</a></li>
+              </ul>
+          </li>
+          <li class="header">
+            <a href="mypage.html">마이페이지</a>
+            <ul class="hovermenu">
+              <li><a href="mypage3.html">아이디 찾기</a></li>
+              <li><a href="mypage4.html">비밀번호 찾기</a></li>
+              <li><a href="mypage2.html">개인정보 수정</a></li>
+              <li><a href="mypage6.html">회원탈퇴</a></li>
+            </ul>
+          </li>
+          <li class="header">
+            <a><img src="../wpImages/logo.png" id="menulogo2" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>|&nbsp;&nbsp;&nbsp;공지사항&nbsp;&nbsp;&nbsp;|</h1>
+      <!--
+       <?php
+    $board_id = $_GET['board_id'];
+        $bno = $_GET['idx']; /* bno함수에 idx값을 받아와 넣음*/
+        $hit = mysqli_fetch_array(mq("select * from ".$board_id." where idx ='".$bno."'"));
+        $hit = $hit['hit'] + 1;
+        $fet = mq("update ".$board_id." set hit = '".$hit."' where idx = '".$bno."'");
+        $sql = mq("select * from ".$board_id." where idx='".$bno."'"); /* 받아온 idx값을 선택 */
+        $board = $sql->fetch_array();
+    ?> -->
+<!-- 글 불러오기 -->
+  <div id="board_read">
+       <h2><?php echo $board['title']; ?></h2>
+           <div id="user_info" align=right>
+                  <?php echo $board['name']; ?> <?php echo $board['date']; ?> 조회:<?php echo $board['hit']; ?>
+                    <div id="bo_line"></div>
+            </div>
+            <div>
+                파일 : <a href="uploads/<?php echo $board['file'];?>" download><?php echo $board['file']; ?></a>
+            </div>
+            <div id="bo_content">
+                <?php echo nl2br("$board[content]"); ?>
+            </div>
+ 
+    <!-- 목록, 수정, 삭제 -->
+ 
+       <div id="bo_ser">
+             <ul>
+                    <li><a href="board.php?board_id=<?echo $board_id;?>">[목록으로]</a></li>
+              <?if ($board['name']==$_SESSION['userid']){?>
+                    <li><a href="modify.php?idx=<?php echo $board['idx']; ?>">[수정]</a></li>
+                    <li><a href="delete.php?idx=<?php echo $board['idx']; ?>">[삭제]</a></li>
+              <?}?>
+            </ul>
+      </div>
+ 
+  </div>
+  <!--- 댓글 불러오기 -->
+<div class="reply_view">
+    <h3>댓글목록</h3>
+        <?php
+            $sql3 = mq("select * from ".$board_id."_reply where con_num='".$bno."' order by idx desc");
+            while($reply = $sql3->fetch_array()){
+        ?>
+        <div class="dap_lo">
+            <div><b><?php echo $reply['name'];?></b></div>
+            <div class="dap_to comt_edit"><?php echo nl2br("$reply[content]"); ?></div>
+            <div class="rep_me dap_to"><?php echo $reply['date']; ?></div>
+
+        </div>
+    <?php } ?>
+
+    <!--- 댓글 입력 폼 -->
+    <div class="dap_ins">
+        <form action="reply_ok.php?board_id=<?echo $board_id;?>&idx=<?php echo $bno; ?>" method="post">
+            <input type="hidden" name="dat_user" id="dat_user" class="dat_user" size="15" placeholder="아이디" value=<?$_SESSION['userid']?>>
+            <div style="margin-top:10px; ">
+                <textarea name="content" class="reply_content" id="re_content" ></textarea>
+                <button id="rep_bt" class="re_bt">댓글</button>
+            </div>
+        </form>
+    </div>
+  </div><!--- 댓글 불러오기 끝 -->
+    <div id="foot_box"></div>
+    </div>
+</main>
+
+    <footer></footer>
+      <nav class="footerText">
+        <ul>
+          <!--<li><a href="#">Yam Yam 블로그</a></li>-->
+            <li>|</li>
+            <li><a href="gnbSubmenu.html">학원소개</a></li>
+            <li>|</li>
+            <a href="policy.html" style="color: blue">이용약관 및 개인정보처리방침</a></li>
+            <li>|</li>
+            <li><a href="notice.html">공지사항</a></li>
+            <li>|</li>
+            <li><a href="mypage6.html">회원탈퇴</a></li>
+            <li>|</li>
+          </ul>
+      </nav>
+      <div class="footerText2">
+        <div class="yam">
+          <p id="yamyam">Yam Yam<br />Academy</p>
+          <p id="yamyam2">(주)얌얌</p>
+        </div>
+        <p>
+          | 상호명 : Yam Yam Academy<br />
+          | 사업자등록번호 : 123-45-6789
+        </p>
+        <p>
+          | 대표자 : 이지성<br />
+          | 교육업 신고번호 : 2580-서울강동-1346<br />
+          | 개인정보관리책임자 : 심현정<br />
+          | 호스팅 제공 사업자 : 채수영
+        </p>
+        <p>
+          | 주소 : 서울특별시 강동구 천호대로157길 14 쇼핑몰나비관리단 6층
+          8층<br />
+          | TEL : 070-123-4567 | FAX : (02)891-2345 | Email :
+          yamyam@naver.com<br />
+        </p>
+        <p>Copyright 2024 얌얌학원 Corp. All Right Reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

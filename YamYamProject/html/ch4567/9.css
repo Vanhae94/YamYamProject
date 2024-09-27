@@ -1,0 +1,19 @@
+div#login {
+    width: 500px;
+    height: 150px;
+    border: 1px solid gray;
+    position: absoulte;
+    left: 800px;
+    top: 50px;
+}
+#login > p {
+    position: relative;
+    left: 10px;
+    top: 5px;
+    font-size: 1.2rem;
+}
+ul,
+li {
+    list-style : none;
+    float: left;
+}

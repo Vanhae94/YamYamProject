@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    .grid-container{
+      display: grid;
+      color: white;
+      width: 500px; 
+      margin: 0 auto;
+      grid-template-columns: repeat(4, 94px);
+      grid-template-rows: 100px 100px 100px;
+      gap: 10px;
+    }
+    .grid-item{
+      width:100%;
+      background-color: rgb(253, 210, 116);
+    }
+    .grid-item:nth-child(2n){
+      background-color: #fabc37;
+    }
+    .grid-item:nth-child(1){
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .grid-item:nth-child(2){
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    .grid-item:nth-child(3){
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .grid-item:nth-child(4){
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .grid-item:nth-child(5){
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .grid-item:nth-child(6){
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .grid-item:nth-child(7){
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .grid-item:nth-child(8){
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .grid-item:nth-child(9){
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .grid-item:nth-child(10){
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    @media(max-width:500px){
+      .grid-container{
+      display: grid;
+      color: white;
+      width: 500px; 
+      margin: 0 auto;
+      grid-template-columns: repeat(3, 94px);
+      grid-template-rows: repeat(5, 100px);
+      gap: 10px;
+    }
+    .grid-item{
+      width:100%;
+      background-color: rgb(253, 210, 116);
+    }
+    .grid-item:nth-child(2n){
+      background-color: #fabc37;
+    }
+    .grid-item:nth-child(1){
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .grid-item:nth-child(2){
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    .grid-item:nth-child(3){
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .grid-item:nth-child(4){
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .grid-item:nth-child(5){
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .grid-item:nth-child(6){
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .grid-item:nth-child(7){
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .grid-item:nth-child(8){
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .grid-item:nth-child(9){
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .grid-item:nth-child(10){
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item item1">1</div>
+    <div class="grid-item item2">2</div>
+    <div class="grid-item item3">3</div>
+    <div class="grid-item item4">4</div>
+    <div class="grid-item item5">5</div>
+    <div class="grid-item item6">6</div>
+    <div class="grid-item item7">7</div>
+    <div class="grid-item item8">8</div>
+    <div class="grid-item item9">9</div>
+    <div class="grid-item item10">10</div>
+  </div>
+</body>
+</html>

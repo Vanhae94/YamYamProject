@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-line</title>
+  <link rel="stylesheet" href="grid-basic.css">
+  <style>
+    .grid-container{
+      display:grid;
+      grid-template-columns:100px 100px 100px 100px 100px;
+      grid-template-rows:100px 100px 100px 100px 100px;
+    }
+    .grid-item:nth-child(1){
+      grid-column-start:1;
+      grid-column-end:3;
+      grid-row-start:1;
+      grid-row-end:2;
+      background-color:red; 
+    }
+    .grid-item:nth-child(2){
+      grid-column-start:3;
+      grid-column-end:6;
+      grid-row-start:1;
+      grid-row-end:3;
+      background-color: yellow;
+    }
+    .grid-item:nth-child(3){
+      grid-column-start:1;
+      grid-column-end:3;
+      grid-row-start:2;
+      grid-row-end:4;
+      background-color: green;
+    }
+    .grid-item:nth-child(4){
+      grid-column-start:3;
+      grid-column-end:6;
+      grid-row-start:3;
+      grid-row-end:4;
+      background-color: orange;
+    }
+    .grid-item:nth-child(5){
+      grid-column-start:1;
+      grid-column-end:6;
+      grid-row-start:4;
+      grid-row-end:5;
+      background-color: black;
+    }
+    .grid-item:nth-child(6){
+      grid-column-start:1;
+      grid-column-end:6;
+      grid-row-start:5;
+      grid-row-end:6;
+      background-color: purple;
+}
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+h1{
+    color:red !important;
+}
+.title{
+    color: blue;
+}
+#a{
+    color: green;
+}
+#p177 {
+    color: black;
+}
+
+html{
+    font-size: 1rem;
+}
+span{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.2;
+}
+div > .v{
+    font-variant: small-caps;
+    text-align: justify;
+}
+a,
+ul,
+li {
+    text-decoration: none;
+}

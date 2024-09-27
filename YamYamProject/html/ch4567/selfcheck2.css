@@ -1,0 +1,47 @@
+*{
+    margin:0 ;
+    padding:0;
+    box-sizing: border-box;
+    text-align:center;
+}
+#login{
+    width: 304px;
+    height: 390px;
+    font-family: Roboto;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align:center;
+}
+#login > fieldset {
+    border: none;
+}
+#login > fieldset > legend {
+    position: absolute;
+    top: -999999999px;
+}
+button{
+    width: 228px;
+    height: 44px;
+    border: 1px solid #000;
+    font-weight: bold;
+}
+fieldset {
+    position: absolute;
+}
+button[type="button"] {
+    position: relative;
+    top: 28px;
+}
+p{
+    position: relative;
+    top: 100px;
+    text-align:center;
+}
+#username {
+    position: relative;
+    top: 120px;
+}
+#password {
+    position: relative;
+    top: 140px;
+}

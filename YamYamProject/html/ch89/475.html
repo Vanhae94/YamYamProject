@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://www.gilbut.co.kr" class = "bbb">길벗</a>
+    <button onclick = "c()"> 네이버로 고치기 </button>
+</body>
+<script>
+    const c=() => {
+        const aEl = document.querySelector("a");
+        const href = aEl.getAttribute("href");    //팝업창
+        alert(href);
+        const c = aEl.getAttribute("class");    //class의 bbb가 팝업창으로 뜨게 하기
+        alert(c);
+        aEl.setAttribute("href", "http://www.naver.com"); //네이버 링크, 이름으로 고치기
+        aEl.innerText = "네이버" ;
+        aEl.removeAttribute("href"); //네이버 링크 없애기
+    };
+</script>
+</html>

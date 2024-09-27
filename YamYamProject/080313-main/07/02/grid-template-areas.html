@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-template-areas</title>
+  <link rel="stylesheet" href="grid-basic.css">
+  <style>
+    .grid-container{
+      display:grid;
+      grid-template-areas: 
+      "h10 h10 h10"
+      "s10 c10 c10"
+      "f10 f10 f10";
+    }
+    #h1{
+      grid-area:h10;
+    }
+    #s1{
+      grid-area:s10;
+    }
+    #c1{
+      grid-area:c10;
+    }
+    #f1{
+      grid-area:f10;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <p id="header" class="grid-item">header</p>
+    <p id="sidebar" class="grid-item">sidebar</p>
+    <p id="content" class="grid-item">content</p>
+    <p id="footer" class="grid-item">footer</p>
+  </div>
+</body>
+</html>

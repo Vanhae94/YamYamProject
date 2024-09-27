@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습 : 버튼 만들기</title>
+</head>
+<body>
+    <div>
+        <p id = "inner"> 연습 </p>
+    </div>
+    <button onclick="c()"> click! </button>
+</body>
+<script>
+    const c = () => {
+        const p = document.querySelector("#inner").innerHTML;
+        console.log(p);
+        document.querySelector("#inner").innerHTML = `<i> 복습 </i> ` ;
+    };
+</script>
+</html>

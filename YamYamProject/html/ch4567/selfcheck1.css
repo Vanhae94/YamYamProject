@@ -1,0 +1,23 @@
+*{
+    margin:20px ;
+    padding:20px;
+    border-left: 30px;
+    box-sizing: border-box;
+} 
+#postit{
+    width: 520px;
+    height: 600px;
+    background-color: #ffff99;
+    padding: 18px;
+    transform: rotate(10deg);
+    font-family: 'Nanum Pen Script';
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 44px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,40 @@
+*{
+    color:orange;
+
+}
+#ss{
+    color:green;
+    font-family:'Times New Roman', Times, serif;
+}
+#aa{
+    color: pink;
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+}
+.c1{
+    font-weight: 800;
+    font-style: italic;
+}
+.c2{
+    color : red;
+    font-weight: oblique;
+    font-size: 60px;
+}
+a[href] {
+    color : brown;
+    display: block;
+}
+#title[href]{
+    color: pink;
+    font-style: italic;
+}
+.title[href]{
+    color: purple;
+    font-weight:bolder;
+}
+[class^="ab"]{
+    display: block;
+}
+[name$="b"]{
+    display: block;
+}
