@@ -92,16 +92,19 @@
       <form action="#" id="user">
         <fieldset>
           <label for="userID">
-            <h1>아&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;디&nbsp;&nbsp;&nbsp;</h1>
+            <div class = "userID-container">
+            <h1>아&nbsp;&nbsp;&nbsp;&nbsp;이&nbsp;&nbsp;&nbsp;&nbsp;디&nbsp;&nbsp;&nbsp;</h1>
             <style>
               label[for="useremail"] h1 {
                 font-size: 14px;
               }
             </style>
-            <input type="text" id="userID" name="uid" placeholder="아이디" />
+            <input type="text" id="userID" name="uid" placeholder="아이디" class = "userID-input" />
+          </div>
           </label>
           <label for="username">
-            <h1>이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름&nbsp;&nbsp;&nbsp;</h1>
+            <div class = "username-container">
+            <h1>이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름&nbsp;&nbsp;&nbsp;</h1>
             <style>
               label[for="useremail"] h1 {
                 font-size: 14px;
@@ -112,20 +115,13 @@
               id="username"
               name="uname"
               placeholder="이름"
+              class = "username-input"
             />
-          </label>
-          <label for="email">
-            <h1>이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;메&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일&nbsp;&nbsp;&nbsp;</h1>
-            <style>
-              label[for="useremail"] h1 {
-                font-size: 14px;
-              }
-            </style>
-            <input type="text" id="email" name="email" placeholder="이메일" />
+          </div>
           </label>
           <label for="passwordHint">
             <div class="passwordHint-container">
-              <h1>비밀번호 힌트</h1>
+              <h1>비밀번호 힌트&nbsp;</h1>
               <select
                 name="passwordHint"
                 id="passwordselect"
@@ -148,10 +144,11 @@
           </label>
           <button type="submit">비밀번호 찾기</button>
         </fieldset>
+        <div class = a-container>
         <a href="mypage3.html"> 아이디 찾기</a>
+      </div>
       </form>
     </main>
-
     <footer>
       <nav class="footerText">
       <ul>

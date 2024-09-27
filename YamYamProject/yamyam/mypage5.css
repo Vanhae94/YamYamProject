@@ -59,8 +59,7 @@
 
 
 /* ----------------------------------------- 회원가입 창 */
-=======
->>>>>>> 5878e66ebd599580eab3a62fc804cbca56b5275e
+
 body {
   width: 1280px;
   margin: 0 auto;
@@ -132,14 +131,62 @@ input {
   margin-bottom: 0px;
 }
 
+
+.userID-container{
+  display: flex;
+  align-items: center;
+}
+
+.userID-input {
+  background-color: #eaeaea;
+  width: 320px;
+  height: 50px;
+  border: 1px solid black;
+  margin-left : -1.8px;
+}
+
+
+.password-container{
+  display: flex;
+  align-items: center;
+}
+
+.password-input {
+  background-color: #eaeaea;
+  width: 320px;
+  height: 50px;
+  border: 1px solid black;
+  margin-left : -1px;
+}
+
+
+
+
+
+.username-container{
+  display: flex;
+  align-items: center;
+}
+
+.username-input {
+  background-color: #eaeaea;
+  width: 320px;
+  height: 50px;
+  border: 1px solid black;
+  margin-left : -2.5px;
+}
+
+
+
+
 button {
-  width: 146px; 
+  width: 140px; 
   height: 50px; 
   border: 1px solid #000;
   color: #ffffff;
   background-color: rgb(231, 180, 86);
   cursor: pointer; 
-  margin-left: 1px; 
+  margin-left: 15px; 
 }
 
 button:hover {
@@ -174,14 +221,14 @@ button:hover {
 }
 
 .passwordHint-input {
-  width: 146px;
-  margin-left: 5px;
+  width: 138px;
+  margin-left: 11.5px;
 }
 
 .passwordHint-select {
   height: 50px; 
   padding: 8px; 
-  width: 146px; 
+  width: 148px; 
   margin-right: 20px; 
 }
 
@@ -197,15 +244,17 @@ button:hover {
 .email-input {
   width: 146px;
   height: 50px;
+  margin-left: -2px; 
   border: 1px solid black;
 }
 .domain-input {
-  width: 146px;
+  width: 138px;
   height: 50px;
   border: 1px solid black;
   margin-right: 10px; 
   margin-right: 10px;
 }
+
 
 .domain-select {
   height: 50px; 
@@ -218,32 +267,5 @@ button:hover {
   line-height: normal; 
 }
 
-.checkbox-container input[type="checkbox"] {
-  width: 15px; 
-  height: 15px; 
-  appearance: none; 
-  background-color: #fff;
-  border: 1px solid #000; 
-  border-radius: 2px; 
-  cursor: pointer; 
-  margin-right: 13px;
-}
 
-.checkbox-container input[type="checkbox"]:checked {
-  background-color: #000; 
-  border: none;
-  position: relative;
-}
-
-.checkbox-container input[type="checkbox"]:checked::after {
-  content: ""; 
-  position: absolute;
-  left: 3px; 
-  top: 7px; 
-  width: 4px; 
-  height: 8px; 
-  border: solid white; 
-  border-width: 0 1px 1px 0; 
-  transform: rotate(45deg); 
-}
 

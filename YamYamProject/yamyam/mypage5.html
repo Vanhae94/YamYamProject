@@ -96,158 +96,169 @@
           </div>
       </div>
   </div>
-    <main>
-      <div id="middletitle">
-        <h1>Yam Yam Academy 회원가입</h1>
-      </div>
-      <form action="#" id="user">
-        <fieldset>
-          <label for="userID">
-            <h1>
-              &nbsp;&nbsp;&nbsp;&nbsp;아&nbsp;&nbsp;이&nbsp;&nbsp;디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </h1>
-            <input type="text"
-            id="userID"
-            name="uid" 
-            placeholder="아이디"
-            />
-          </label>
+  <main>
+    <div id="middletitle">
+      <h1>Yam Yam Academy 회원가입</h1>
+    </div>
+    <form action="#" id="user">
+      <fieldset>
+        <label for="userID">
+          <div class = "userID-container">
+          <h1>
+            &nbsp;&nbsp;&nbsp;아&nbsp;&nbsp;이&nbsp;&nbsp;디&nbsp;&nbsp;&nbsp;
+          </h1>
+          <input type="text"
+          id="userID"
+          name="uid" 
+          placeholder="아이디"
+          class = "userID-input"
+           />
+          </div>
+        </label>
 
-          <label for="username">
-            <h1>
-              &nbsp;&nbsp;&nbsp;&nbsp;이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름
-              &nbsp;&nbsp;&nbsp;&nbsp;
-            </h1>
-            <input
-              type="text" 
-              id="username"
-              name="uname"
-              placeholder="이름"
-            />
-          </label>
+        <label for="username">
+          <div class = "username-container">
+          <h1>
+            &nbsp;&nbsp;&nbsp;이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름
+            &nbsp;&nbsp;&nbsp;
+          </h1>
+          <input
+            type="text" 
+            id="username"
+            name="uname"
+            placeholder="이름"
+            class = "username-input"
+          />
+        </div>
+        </label>
 
-          <label for="password">
-            <h1>&nbsp;&nbsp;&nbsp;&nbsp;비밀번호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <label for="password">
+          <div class = "password-container">
+          <h1>&nbsp;&nbsp;&nbsp;비밀번호&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+          <input
+            type="password"
+            id="password"
+            name="upw"
+            placeholder="비밀번호"
+            class = "password-input"
+          />
+          </div>
+        </label>
+
+        <label for="passwordConfirm">
+          <div style="display: flex; align-items: center;">
+            <h1>비밀번호&nbsp;확인</h1>
             <input
               type="password"
-              id="password"
-              name="upw"
-              placeholder="비밀번호"
+              id="passwordConfirm" 
+              placeholder="비밀번호 확인"
+              class="passwordConfirm-input"
             />
-          </label>
-
-          <label for="passwordConfirm">
-            <h1>비밀번호&nbsp;확인</h1>
-            <div style="display: flex; align-items: center;">
-              <input
-                type="password"
-                id="passwordConfirm" 
-                placeholder="비밀번호 확인"
-              />
-              <button type="button" class="password-confirm-button" onclick="checkPassword()">비밀번호 확인</button>
-            </div>
-          </label>
-
-          <label for="passwordHint">
-            <div class="passwordHint-container">
-              <h1>비밀번호 힌트</h1>
-              <select
-                name="passwordHint"
-                id="passwordselect" 
-                onchange="HintCheck();"
-                class="passwordHint-select"
-              >
-                <option value="0" selected="selected">비밀번호 힌트</option>
-                <option value="내가 태어난 곳">내가 태어난 곳</option>
-                <option value="기억에 남는 장소">기억에 남는 장소</option>
-                <option value="나의 고향은?">나의 고향은?</option>
-                <option value="내가 나온 학교">내가 나온 학교</option>
-              </select>
-              <input
-                type="text"
-                id="passwordHint"
-                name="pwHint"
-                class="passwordHint-input"
-              />
-            </div>
-          </label>
-
-          <label for="useremail">
-            <h1>
-              &nbsp;&nbsp;&nbsp;이&nbsp;&nbsp;메&nbsp;&nbsp;일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </h1>
-            <div class="email-container">
-              <input
-                type="text"
-                id="useremail"
-                name="umail"
-                placeholder="이메일"
-                class="email-input"
-              />
-              <h1>&nbsp;&nbsp;@&nbsp;&nbsp;</h1>
-              <input
-                type="text"
-                id="useremailDomain"
-                name="mailDomain"
-                placeholder="도메인"
-                class="domain-input"
-              />
-
-              <select
-                name="domain"
-                id="domainSelect"
-                onchange="domainCheck();"
-                class="domain-select"
-              >
-                <option value="0" selected="selected">직접입력</option>
-                <option value="naver.com">naver.com</option>
-                <option value="hanmail.net">hanmail.net</option>
-                <option value="nate.com">nate.com</option>
-                <option value="yahoo.com">yahoo.com</option>
-              </select>
-            </div>
-          </label>
-        </fieldset>
-        <!--<div class="checkbox-container">
-          <label>
-            <input type="checkbox" name="check" value="check1" />정보 메일을
-            수신합니다.
-          </label>
-        </div>-->
-        <div class="button-container">
-          <button type="submit">회원가입</button>
+            <button type="button" class="password-confirm-button" onclick="checkPassword()">비밀번호 확인</button>
+        
         </div>
-      </form>
+        </label>
 
-      <script>
-        function domainCheck() {
-          const selectElement = document.getElementById("domainSelect");
-          const inputElement = document.getElementById("useremailDomain");
+        <label for="passwordHint">
+          <div class="passwordHint-container">
+            <h1>비밀번호 힌트</h1>
+            <select
+              name="passwordHint"
+              id="passwordselect" 
+              onchange="HintCheck();"
+              class="passwordHint-select"
+            >
+              <option value="0" selected="selected">비밀번호 힌트</option>
+              <option value="내가 태어난 곳">내가 태어난 곳</option>
+              <option value="기억에 남는 장소">기억에 남는 장소</option>
+              <option value="나의 고향은?">나의 고향은?</option>
+              <option value="내가 나온 학교">내가 나온 학교</option>
+            </select>
+            <input
+              type="text"
+              id="passwordHint"
+              name="pwHint"
+              class="passwordHint-input"
+            />
+          </div>
+        </label>
 
-          inputElement.value =
-            selectElement.value !== "0" ? selectElement.value : "";     
-          }
-      </script>
+        <label for="useremail">
+          <h1>
+            &nbsp;&nbsp;이&nbsp;&nbsp;메&nbsp;&nbsp;일&nbsp;&nbsp;&nbsp&nbsp;
+          </h1>
+          <div class="email-container">
+            <input
+              type="text"
+              id="useremail"
+              name="umail"
+              placeholder="이메일"
+              class="email-input"
+            />
+            <h1>&nbsp;&nbsp;@&nbsp;&nbsp;</h1>
+            <input
+              type="text"
+              id="useremailDomain"
+              name="mailDomain"
+              placeholder="도메인"
+              class="domain-input"
+            />
 
-      <script>
-          function checkPassword() {
-    const password = document.getElementById("password").value;
-    const passwordConfirm = document.getElementById("passwordConfirm").value;
+            <select
+              name="domain"
+              id="domainSelect"
+              onchange="domainCheck();"
+              class="domain-select"
+            >
+              <option value="0" selected="selected">직접입력</option>
+              <option value="naver.com">naver.com</option>
+              <option value="hanmail.net">hanmail.net</option>
+              <option value="nate.com">nate.com</option>
+              <option value="yahoo.com">yahoo.com</option>
+            </select>
+          </div>
+        </label>
+      </fieldset>
+      <!--<div class="checkbox-container">
+        <label>
+          <input type="checkbox" name="check" value="check1" />정보 메일을
+          수신합니다.
+        </label>
+      </div>-->
+      <div class="button-container">
+        <button type="submit">회원가입</button>
+      </div>
+    </form>
 
-        if (password.length < 8 || password.length >= 12) {
-      alert("비밀번호는 8글자 이상 12글자 미만이어야 합니다.");
-      return; 
-    }
+    <script>
+      function domainCheck() {
+        const selectElement = document.getElementById("domainSelect");
+        const inputElement = document.getElementById("useremailDomain");
 
-    if (password === passwordConfirm) {
-      alert("사용가능한 비밀번호입니다.");
-    } else {
-      alert("비밀번호를 다시 확인해주세요.");
-    }
+        inputElement.value =
+          selectElement.value !== "0" ? selectElement.value : "";     
+        }
+    </script>
+
+    <script>
+        function checkPassword() {
+  const password = document.getElementById("password").value;
+  const passwordConfirm = document.getElementById("passwordConfirm").value;
+
+      if (password.length < 8 || password.length >= 12) {
+    alert("비밀번호는 8글자 이상 12글자 미만이어야 합니다.");
+    return; 
   }
-      </script>
-      
-    </main>
+
+  if (password === passwordConfirm) {
+    alert("사용가능한 비밀번호입니다.");
+  } else {
+    alert("비밀번호를 다시 확인해주세요.");
+  }
+}
+    </script>
+    
+  </main>
 
     <footer>
       <nav class="footerText">

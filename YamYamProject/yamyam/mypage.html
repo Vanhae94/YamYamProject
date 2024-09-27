@@ -90,6 +90,7 @@
         <fieldset>
           <!--<legend>로그인</legend>-->
           <label for="userID">
+            <div class="userID-container">
             <h1>&nbsp;아&nbsp;&nbsp;이&nbsp;&nbsp;디</h1>
             <style>
               label[for="userID"] h1 {
@@ -99,10 +100,14 @@
             <input type="text" 
             id="userID" 
             name="uid" 
-            placeholder="아이디" />
+            placeholder="아이디" 
+            class = "userID-input"
+            />
+            </div>
           </label>
           <label for="password">
-            <h1>&nbsp;비밀번호</h1>
+            <div class="password-container">
+            <h1>&nbsp;비밀&nbsp;번호</h1>
             <style>
               label[for="password"] h1 {
                 font-size: 14px;
@@ -113,7 +118,9 @@
               id="password"
               name="upw"
               placeholder="비밀번호"
+              class = "userpassword-input"
             />
+          </div>
           </label>
 
           <button type="submit">로그인</button>

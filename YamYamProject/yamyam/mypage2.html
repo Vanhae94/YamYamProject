@@ -92,7 +92,8 @@
         <fieldset>
           <legend>개인정보 수정</legend>
           <label for="userID">
-            <h1>아&nbsp;&nbsp;이&nbsp;&nbsp;디&nbsp;</h1>
+            <div class="userID-container">
+            <h1>아&nbsp;&nbsp;이&nbsp;&nbsp;디</h1>
             <style>
               label[for="userID"] h1 {
                 font-size: 14px;
@@ -101,10 +102,13 @@
             <input type="text" 
             id="userID" 
             name="uid" 
-            placeholder="아이디" />
+            placeholder="아이디"
+            class="userID-input" />
+            </div>
           </label>
           <label for="username">
-            <h1>이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름&nbsp;</h1>
+            <div class="username-container">
+            <h1>이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름&nbsp;</h1>
             <style>
               label[for="username"] h1 {
                 font-size: 14px;
@@ -115,7 +119,9 @@
               id="username"
               name="uname"
               placeholder="이름"
+              class="username-input"
             />
+            </div>
           </label>
           <label for="password">
             <h1>비밀번호&nbsp;</h1>
@@ -131,24 +137,57 @@
               placeholder="비밀번호"
             />
           </label>
+
           <label for="useremail">
-            <h1>이&nbsp;&nbsp;메&nbsp;&nbsp;일&nbsp;</h1>
-            <style>
-              label[for="useremail"] h1 {
-                font-size: 14px;
-              }
-            </style>
-            <input
-              type="text"
-              id="useremail"
-              name="umail"
-              placeholder="이메일"
-            />
+            <h1>
+            이&nbsp;&nbsp;메&nbsp;&nbsp;일
+            </h1>
+            <div class="email-container">
+              <input
+                type="text"
+                id="useremail"
+                name="umail"
+                placeholder="이메일"
+                class="email-input"
+              />
+              <h1>&nbsp;&nbsp;@&nbsp;&nbsp;</h1>
+              <input
+                type="text"
+                id="useremailDomain"
+                name="mailDomain"
+                placeholder="도메인"
+                class="domain-input"
+              />
+
+              <select
+                name="domain"
+                id="domainSelect"
+                onchange="domainCheck();"
+                class="domain-select"
+              >
+                <option value="0" selected="selected">직접입력</option>
+                <option value="naver.com">naver.com</option>
+                <option value="hanmail.net">hanmail.net</option>
+                <option value="nate.com">nate.com</option>
+                <option value="yahoo.com">yahoo.com</option>
+              </select>
+            </div>
           </label>
         </fieldset>
         <button type="submit">변경</button>
       </form>
     </main>
+
+    <script>
+      function domainCheck() {
+        const selectElement = document.getElementById("domainSelect");
+        const inputElement = document.getElementById("useremailDomain");
+
+        inputElement.value =
+          selectElement.value !== "0" ? selectElement.value : "";     
+        }
+    </script>
+
     <footer>
       <nav class="footerText">
       <ul>
